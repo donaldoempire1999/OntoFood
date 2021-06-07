@@ -1,1 +1,1 @@
-Le but ici est de construire une application avec un moteur ontologique permetta de faire de la recommandation nutritives et la recherche des mets.
+Le but ici est de construire une application avec un moteur ontologique permettant de faire de la recommandation nutritives et la recherche des mets.
