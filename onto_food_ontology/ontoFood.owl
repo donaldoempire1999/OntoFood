@@ -363,13 +363,17 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <!-- http://www.ontoFood.fr/Complément -->
 
-    <owl:Class rdf:about="http://www.ontoFood.fr/Complément"/>
+    <owl:Class rdf:about="http://www.ontoFood.fr/Complément">
+        <rdfs:label>Complément</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.ontoFood.fr/Continent -->
 
-    <owl:Class rdf:about="http://www.ontoFood.fr/Continent"/>
+    <owl:Class rdf:about="http://www.ontoFood.fr/Continent">
+        <rdfs:label>Continent</rdfs:label>
+    </owl:Class>
     
 
 
@@ -483,7 +487,9 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <!-- http://www.ontoFood.fr/Maladie -->
 
-    <owl:Class rdf:about="http://www.ontoFood.fr/Maladie"/>
+    <owl:Class rdf:about="http://www.ontoFood.fr/Maladie">
+        <rdfs:label>Maladie</rdfs:label>
+    </owl:Class>
     
 
 
@@ -515,6 +521,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
             </owl:Class>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://www.ontoFood.fr/MetSansComplement"/>
+        <rdfs:label>MetAvecComplement</rdfs:label>
     </owl:Class>
     
 
@@ -533,13 +540,16 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:label>MetSansComplement</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.ontoFood.fr/Nutriment -->
 
-    <owl:Class rdf:about="http://www.ontoFood.fr/Nutriment"/>
+    <owl:Class rdf:about="http://www.ontoFood.fr/Nutriment">
+        <rdfs:label>Nutriment</rdfs:label>
+    </owl:Class>
     
 
 
@@ -560,6 +570,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
                 <owl:someValuesFrom rdf:resource="http://www.ontoFood.fr/Region"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:label>Pays</rdfs:label>
     </owl:Class>
     
 
@@ -582,7 +593,9 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <!-- http://www.ontoFood.fr/Region -->
 
-    <owl:Class rdf:about="http://www.ontoFood.fr/Region"/>
+    <owl:Class rdf:about="http://www.ontoFood.fr/Region">
+        <rdfs:label>Region</rdfs:label>
+    </owl:Class>
     
 
 
@@ -596,7 +609,9 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <!-- http://www.ontoFood.fr/Sauce -->
 
-    <owl:Class rdf:about="http://www.ontoFood.fr/Sauce"/>
+    <owl:Class rdf:about="http://www.ontoFood.fr/Sauce">
+        <rdfs:label>Sauce</rdfs:label>
+    </owl:Class>
     
 
 
@@ -604,6 +619,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/SauceGraines">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/Sauce"/>
+        <rdfs:label>SauceGraines</rdfs:label>
     </owl:Class>
     
 
@@ -612,6 +628,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/SauceGwants">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/Sauce"/>
+        <rdfs:label>SauceGwants</rdfs:label>
     </owl:Class>
     
 
@@ -620,6 +637,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/SauceLegumes">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/Sauce"/>
+        <rdfs:label>SauceLegumes</rdfs:label>
     </owl:Class>
     
 
@@ -628,6 +646,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/SauceNoires">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/Sauce"/>
+        <rdfs:label>SauceNoires</rdfs:label>
     </owl:Class>
     
 
@@ -636,6 +655,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/SelMineral">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/Nutriment"/>
+        <rdfs:label>SelMineral</rdfs:label>
     </owl:Class>
     
 
@@ -652,6 +672,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/Vitamine">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/Nutriment"/>
+        <rdfs:label>Vitamine</rdfs:label>
     </owl:Class>
     
 
@@ -761,6 +782,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
     <owl:Class rdf:about="http://www.ontoFood/SauceLegumesFeuiles">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/SauceLegumes"/>
         <owl:disjointWith rdf:resource="http://www.ontoFood/SauceLegumesFruit"/>
+        <rdfs:label>SauceLegumesFeuilles</rdfs:label>
     </owl:Class>
     
 
@@ -769,6 +791,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood/SauceLegumesFruit">
         <rdfs:subClassOf rdf:resource="http://www.ontoFood.fr/SauceLegumes"/>
+        <rdfs:label>SauceLegumesFruit</rdfs:label>
     </owl:Class>
     
 
@@ -1580,7 +1603,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/feuille_eru"/>
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/huile_arachide"/>
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/sel_de_cuisine"/>
-        <www2:a_pour_nom_tradi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce eru</www2:a_pour_nom_tradi>
+        <www2:a_pour_nom_conv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce eru</www2:a_pour_nom_conv>
     </owl:NamedIndividual>
     
 
