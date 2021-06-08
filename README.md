@@ -6,4 +6,4 @@ onto-env: Cotient l'envrinomment python spécisalisé pour notre application
 
 onto_food_ontology: contient la description owl de notre projet
 
-ontoFoodApp: c'est notre projet django.
+ontoFoodApp: Ici c'est notre projet Angular.
