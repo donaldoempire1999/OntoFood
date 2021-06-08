@@ -1,32 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NewBiz Bootstrap Template</title>
+  <title>OntoFood</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href=" {% static 'ontoHome/index/img/favicon.png'%}" rel="icon">
+  <link href=" {% static 'ontoHome/index/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
 
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href=" {% static 'ontoHome/index/lib/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href=" {% static 'ontohome/index/lib/font-awesome/css/font-awesome.min.css'%} " rel="stylesheet">
   <link href="{% static 'ontoHome/index/lib/animate/animate.min.css' %} " rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href=" {% static 'ontoHome/index/lib/ionicons/css/ionicons.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'ontoHome/index/lib/owlcarousel/assets/owl.carousel.min.css' %} " rel="stylesheet">
+  <link href="{% static 'ontoHome/index/lib/lightbox/css/lightbox.min.css' %} " rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{% static 'ontoHome/index/css/style.css' %}" rel="stylesheet">
 
 </head>
 
@@ -40,7 +41,7 @@
 
       <div class="logo float-left">
         
-        <a href="#intro" class="scrollto"><h2>Onto_Foods</h2></a>
+        <a href="#intro" class="scrollto"><h2>OntoFood</h2></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -72,7 +73,6 @@
      <form class="form-inline my-5 my-lg-0">
       <input class="form-control mr-sm-5" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        .  l'ontologie a votre porter.
     </form>
 
     </div>
@@ -214,7 +214,7 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="img/no.png" class="img-fluid" alt="">
+              <img src="{% static 'ontoHome/index/img/no.png' %}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Donald Daquin</h4>
@@ -232,7 +232,7 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
-              <img src="img/no.png" class="img-fluid" alt="">
+              <img src="{% static 'ontoHome/index/img/no.png' %}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Abouar Prosper</h4>
@@ -250,7 +250,7 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="img/no.png" class="img-fluid" alt="">
+              <img src="{% static 'ontoHome/index/img/no.png' %} " class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Gwoen Khris</h4>
@@ -268,7 +268,7 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="member">
-              <img src="img/no.png" class="img-fluid" alt="">
+              <img src=" {% static 'ontoHome/index/img/no.png' %} " class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Excel Sime</h4>
@@ -308,19 +308,19 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/mobile-nav/mobile-nav.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src=" {% static 'ontoHome/index/lib/jquery/jquery.min.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/easing/easing.min.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/wow/wow.min.js'%}"></script>
+  <script src=" {% static 'ontoHome/index/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/counterup/counterup.min.js' %}"></script>
+  <script src=" {% static 'ontoHome/index/lib/owlcarousel/owl.carousel.min.js'%}"></script>
+  <script src=" {% static 'ontoHome/index/lib/isotope/isotope.pkgd.min.js'%}"></script>
+  <script src=" {% static 'ontoHome/index/lib/lightbox/js/lightbox.min.js'%}"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <script src="{% static 'ontoHome/index/contactform/contactform.js' %}"></script>
 
   <script type="text/javascript">
   document.getElementById('btnAdd').addEventListener('click', function(){
@@ -359,7 +359,7 @@
   });</script>
 
   <!-- Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src=" {% static 'ontoHome/index/js/main.js' %}"></script>
 
 </body>
 </html>
