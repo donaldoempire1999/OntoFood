@@ -1,1 +1,0 @@
-Par rapport à ALLEGRO, FAUDRA avoir les mêmes paramètres au niveau des variables ONTO dans settings. Ceux qui sont actuellement c'est par rapport à mes parmètres locaux.
