@@ -1,4 +1,6 @@
-from django.shortcuts import render
+import json
+from django.http.response import HttpResponse
+from django.shortcuts import render, resolve_url
 from django.views import View
 from ontoFoodApp.onto_class import OntoFoodDao
 
@@ -10,6 +12,10 @@ class Home(View):
 
 
 
-"""class TestView(View):
+class TestView(View):
     def get(self , request):
-        # ontoDao = OntoFoodDao.get_all_sauces()"""
+        ontoDao = OntoFoodDao()
+        sauces = ontoDao.get_all_sauces()
+        print(sauces)
+        
+        return render(request=request, template_name="ontoHome/sauces.html", context={'sauces': sauces})

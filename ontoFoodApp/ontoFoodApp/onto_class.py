@@ -79,17 +79,29 @@ class OntoFoodDao:
         self.conn = OntoFoodConnect.getConnectInstance().conn_inst
         self.repo = OntoFoodConnect.getConnectInstance().repo_inst
 
+    
+    
     def get_all_sauces(self):
         self.conn.setNamespace('', OntoFoodDao.name_space)
         query = self.conn.prepareTupleQuery(query=
-          """SELECT ?s ?type ?nom { ?s rdf:type ?type.
-                       ?type rdfs:subClassOf ?t.
+          """SELECT ?res_sauce ?typ_sauce ?nom_sauce { ?res_sauce rdf:type ?typ_sauce.
+                       ?typ_sauce rdfs:subClassOf ?t.
                        ?t rdfs:subClassOf :Sauce.
-                       ?s :a_pour_nom_conv ?nom
+                       ?res_sauce :a_pour_nom_conv ?nom_sauce
                    }""")
         
-        result = query.evaluate(output=True, output_format=TupleFormat.JSON)
-        print(type(result.getBindingNames()))    
+        sauces = []
+        index = 0
+
+        with query.evaluate() as result:
+            for bindings in result:
+                sauces.insert(index, (bindings.getValue('res_sauce'), bindings.getValue('typ_sauce'), bindings.getValue('nom_sauce')))
+                index+=1
+        
+        return sauces
+
+    
+    
     # Le rôle de cette fonction est de me permettre de definir l'URI d'une ressource
     def makeRessourceURI(self, ressource_name):
         return self.conn.createURI(namespace=OntoFoodDao.name_space, localname=ressource_name)
