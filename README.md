@@ -2,8 +2,6 @@ Le but ici est de construire une application avec un moteur ontologique permetta
 
 onto_spec: Contient tout ce qui concerne les spécifications de l'application , diagrammes de classes , architecture etc..
 
-onto-env: Cotient l'envrinomment python spécisalisé pour notre application
-
 onto_food_ontology: contient la description owl de notre projet
 
-ontoFoodApp: Ici c'est notre projet Angular.
+onto-food-app: Ici c'est l'application, elle est angulaire.
