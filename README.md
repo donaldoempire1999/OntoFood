@@ -5,3 +5,5 @@ onto_spec: Contient tout ce qui concerne les spécifications de l'application , 
 onto_food_ontology: contient la description owl de notre projet
 
 onto-food-app: Ici c'est l'application, elle est angulaire.
+
+-node_version: 14.04
