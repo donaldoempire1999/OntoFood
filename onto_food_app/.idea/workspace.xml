@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81367bf-f720-4412-812c-09a8c900b091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onto_food_ontology/ontoFood.owl" beforeDir="false" afterPath="$PROJECT_DIR$/../onto_food_ontology/ontoFood.owl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623895220359</updated>
-      <workItem from="1623895222700" duration="13461000" />
+      <workItem from="1623895222700" duration="15118000" />
     </task>
     <servers />
   </component>
@@ -54,6 +54,10 @@
       <screen x="0" y="27" width="1920" height="995" />
     </state>
     <state x="418" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.995@0.27.1920.995" timestamp="1623898826227" />
+    <state x="430" y="72" width="1049" height="911" key="CommitChangelistDialog2" timestamp="1623936910026">
+      <screen x="0" y="27" width="1920" height="995" />
+    </state>
+    <state x="430" y="72" width="1049" height="911" key="CommitChangelistDialog2/0.27.1920.995@0.27.1920.995" timestamp="1623936910026" />
     <state x="449" y="159" width="1022" height="737" key="SettingsEditor" timestamp="1623927183640">
       <screen x="0" y="27" width="1920" height="995" />
     </state>
