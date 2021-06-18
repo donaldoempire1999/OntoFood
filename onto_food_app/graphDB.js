@@ -2,6 +2,7 @@
 
 const { EnapsoGraphDBClient } = require('@innotrade/enapso-graphdb-client');
 
+
 // connection data to the running GraphDB instance
 const GRAPHDB_BASE_URL = 'http://localhost:7200',
     GRAPHDB_REPOSITORY = 'ontoFood',
@@ -57,19 +58,61 @@ class GraphDBDao{
 
     
         }else{
-            return this.#graphDBDaoInstance
+            return this.#graphDBDaoInstance;
         }
 
     }
 
 
 
-    async getAllTriples(){
+    getAllClassByINdividualsNumber(){
         return this.graphDBEndpoint.query(`select ?label  (COUNT(?indi) as ?num_indi)  where { 
-            ?indi rdf:type ?class.
-            ?class rdfs:label ?label;
-         } group by ?label order by ?num_indi  `,
+           ?class rdfs:label ?label;
+                rdf:type rdfs:Class.
+           OPTIONAL { ?indi rdf:type ?class }
+            } group by ?label `,
         { transform: 'toJSON' })
+    }
+
+     getAllInfoAboutEntity(label){
+
+        if(label.search('\'') != -1){
+          
+            label = escape(label)
+        }
+      
+
+        let query = "select ?lb1 ?p ?lb2  where {\n" +
+            "    {?s rdfs:label ?lb1;\n" +
+            "        ?p ?o.\n" +
+            "        ?o rdfs:label ?lb2.\n" +
+            "        filter(?lb1 = '"+label+"')\n" +
+            "    }\n" +
+            "    union{\n" +
+            "    ?o rdfs:label ?lb2.\n" +
+            "       ?s ?p ?o;rdfs:label ?lb1.\n" +
+            "        filter(?lb2 = '"+label+"')\n" +
+            "      }\n" +
+            "  }"
+
+        return this.graphDBEndpoint.query(query);
+     }
+
+
+     getCommentsAboutLabel(label){
+
+        let query = "select ?comment where {" +
+            "?s rdfs:label '" + escape(label) + "';" +
+            "rdfs:comment ?comment.}"
+
+         return this.graphDBEndpoint.query(query);
+
+      }
+
+      isClass(label , infos) {
+
+        return infos.records.some(elm => elm.lb1 === label && elm.p === EnapsoGraphDBClient.PREFIX_RDFS.iri.concat('subClassOf'));
+
      }
 }
 
