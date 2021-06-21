@@ -2,7 +2,7 @@
 
 <% infos.records.forEach((elm) => { %>
 
-    <% if (elm.p === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type') {%>
+    <% if (elm.p === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' && elm.lb2 === label) {%>
 
         <% if (i%3 === 0) { %>
 
