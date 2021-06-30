@@ -305,6 +305,16 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
     
 
 
+    <!-- http://www.ontoFood.fr/a_pour_image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontoFood.fr/a_pour_image">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ontoFood.fr/a_pour_metier -->
 
     <owl:DatatypeProperty rdf:about="http://www.ontoFood.fr/a_pour_metier">
@@ -1883,6 +1893,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <www2:peut_se_manger_avec rdf:resource="http://www.ontoFood.fr/viande_de_boeuf"/>
         <www2:peut_se_manger_avec rdf:resource="http://www.ontoFood.fr/viande_du_porc"/>
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/feuille_ndolè"/>
+        <www2:a_pour_image>https://res.cloudinary.com/hv9ssmzrz/image/fetch/c_fill,f_auto,h_488,q_auto,w_650/https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/recipe_photos/original/85533/_ndolee.png</www2:a_pour_image>
         <www2:a_pour_nom_conv>sauce ndolè</www2:a_pour_nom_conv>
         <rdfs:label>sauce ndolè</rdfs:label>
     </owl:NamedIndividual>
@@ -2121,6 +2132,18 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
             <rdf:Description rdf:about="http://www.ontoFood.fr/SauceGwants"/>
             <rdf:Description rdf:about="http://www.ontoFood.fr/SauceLegumes"/>
             <rdf:Description rdf:about="http://www.ontoFood.fr/SauceNoires"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_email"/>
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_image"/>
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_metier"/>
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_nom_conv"/>
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_nom_tradi"/>
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_pseudo"/>
+            <rdf:Description rdf:about="http://www.ontoFood.fr/a_pour_val_kcal"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
