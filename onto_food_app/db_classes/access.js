@@ -7,6 +7,42 @@ module.exports = class Access{
 
     static gb = GraphDBDao.getGraphDBDaoInstance();
 
+    static addClass(labelClass){
+
+
+    }
+
+
+
+
+    static addProperties(properties_ressources){
+
+
+    }
+
+    static modifyPropertie(){
+
+
+    }
+
+    static getClassByIndividuals(){
+
+        return new Promise((resolve, reject) => {
+
+            Access.gb.getAllClassByINdividualsNumber().then(res => {
+
+                resolve(res)
+
+            }).catch(err => {
+
+                console.log(err)
+
+            })
+
+        })
+
+    }
+
     static getEntityByLabel(label){
 
         return new Promise((resolve,reject) => {

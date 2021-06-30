@@ -12,22 +12,17 @@ const Access = require('../db_classes/access');
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  gb.getAllClassByINdividualsNumber().then(rep => {
-    res.render('index', { title: 'Express' , pm: rep});
+  Access.getClassByIndividuals().then(res => {
 
-  }).catch(err => {
-    console.log(err);
-    res.render('index', {title: 'title'})
+     res.render('index', {title: 'title'})
 
-  });
+  })
 
 });
 
 router.get('/global_details/:label', function (req, res ){
 
-  let label = req.params['label'];
-
-  Access.getEntityByLabel(label).then(entity => {
+  Access.getEntityByLabel(req.params['label']).then(entity => {
 
     entity.views = entity.views.filter(view => view.data.length > 0);
 
