@@ -20,6 +20,18 @@ router.get('/', function(req, res, next) {
 
 });
 
+router.get('/text_search/', function (req , res){
+
+  res.render('search');
+
+})
+
+.post('/text_search/', function (req, res){
+
+  res.render('search_result')
+
+})
+
 router.get('/global_details/:label', function (req, res ){
 
   Access.getEntityByLabel(req.params['label']).then(entity => {
