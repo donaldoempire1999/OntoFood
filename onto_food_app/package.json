@@ -13,8 +13,10 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "log4js": "^6.3.0",
     "morgan": "~1.9.1",
     "mustache": "^4.2.0",
+    "solr-node": "^1.2.1",
     "string-interpolation": "^1.2.5"
   }
 }

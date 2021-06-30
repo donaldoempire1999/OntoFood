@@ -1,10 +1,13 @@
 "use strict"
 
-var express = require('express');
-var router = express.Router();
-var GraphDBDao = require('../graphDB');
+let express = require('express');
+let router = express.Router();
+let SolrSearch = require('../db_classes/solr_search');
+const Access = require('../db_classes/access');
 
-let gb = GraphDBDao.getGraphDBDaoInstance();
+//Moteur de recherche
+//let sr = SolrSearch.getSolrSearchInstance();
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,55 +23,21 @@ router.get('/', function(req, res, next) {
 
 });
 
+router.get('/global_details/:label', function (req, res ){
 
-router.get('/global_details/:label', function (req, res ) {
+  let label = req.params['label'];
 
-    // Obtenir toutes les informations par rapport à l'entité ayant le label passé en paramètre dans la requête
+  Access.getEntityByLabel(label).then(entity => {
 
-    let label = "", infos = "", comments = "";
+    entity.views = entity.views.filter(view => view.data.length > 0);
 
-    //Ici je prends le label
-    label = req.params['label']
+    res.render('global_details', {entity: entity});
 
-    // Obentir toutes les informations entre lui et toute les entités
-
-   gb.getAllInfoAboutEntity(label).then(function(result){
-
-       console.log("Voici toutes les informations entre lui et toute les entités");
-
-       console.log(result);
-
-       infos = result;
-
-       return gb.getCommentsAboutLabel(label);
-
-    }).then(function (comments){
-
-        console.log("voici les commentaires...");
-
-        console.log(comments);
-
-        let isClass = gb.isClass(label, infos);
-
-       console.log("Recherche du type de l'entité , est t-il une classe ?")
-
-       console.log(isClass);
-
-        res.render('global_details', {
-            label: label ,
-            comments: comments,
-            infos: infos,
-            isClass: isClass
-        })
-
-
-   }).catch(function(err) {
-       console.log(err);
-       res.render('global_details', {
-           label: label
-       });
-   })
+  }).catch(err => {
+    console.log(err);
+  })
 
 })
+
 
 module.exports = router;

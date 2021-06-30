@@ -1,8 +1,6 @@
 <% let i =  0;%>
 
-<% infos.records.forEach((elm) => { %>
-
-    <% if (elm.p === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' && elm.lb2 === label) {%>
+<% view.data.forEach((dt) => { %>
 
         <% if (i%3 === 0) { %>
 
@@ -10,7 +8,7 @@
 
             <ul class="list-unstyled mb-0">
 
-                <a class="badge bg-individual text-decoration-none link-light" style="font-size: 12px;;" href="/global_details/<%=elm.lb1%>"><%= elm.lb1 %> </a>
+                <a class="badge <%= view.color %> text-decoration-none link-light" style="font-size: 12px;;" href="/global_details/<%=dt%>"><%= dt %> </a>
 
                 <% } else { %>
 
@@ -18,21 +16,16 @@
 
             <ul class="list-unstyled mb-0">
 
-                <a class="badge bg-individual  text-decoration-none link-light" href="/global_details/<%=elm.lb1%>"><%= elm.lb1 %> </a>
+                <a class="badge <%= view.color%>  text-decoration-none link-light" href="/global_details/<%=dt%>"><%= dt %> </a>
 
     <% } %>
 
     <%} else { %>
 
-              <a class="badge bg-individual  text-decoration-none link-light" href="/global_details/<%=elm.lb1%>"><%= elm.lb1 %> </a>
+              <a class="badge <%=view.color%>  text-decoration-none link-light" href="/global_details/<%=dt%>"><%= dt %> </a>
 
               <%}%>
 
-                <% i++;}%>
-
-
-                <% })%>
-
-                %>
+                <% i++;})%>
 
             </ul>

@@ -9,11 +9,11 @@
                 <!-- Post header-->
                 <header class="mb-4">
                     <!-- Post title-->
-                    <h1 class="fw-bolder mb-1"> <%= label %></h1>
+                    <h1 class="fw-bolder mb-1"> <%= entity.getLabel() %></h1>
                     <!-- Post meta content-->
                     <div class="text-muted fst-italic mb-2">
                     
-                        <% if (isClass) { %>
+                        <% if (entity.isClass) { %>
 
                             Classe , avec des relations hierarchiques
 
@@ -28,46 +28,26 @@
                     </div>
                    
                     <!-- Post categories-->
-                   
 
-                    
-                    <% infos.records.forEach((elm) => {%>
+                    <%if(!entity.isClass){%>
 
-                        <% if (isClass) { %>
-                             
-                            <% if (elm.p == 'http://www.w3.org/2000/01/rdf-schema#subClassOf' && (elm.lb2 !== label && elm.lb2 !== 'Thing' )) { %>
-
-                                      <a class="badge bg-secondary text-decoration-none link-light"  href="/global_details/<%=elm.lb2%>"><%= elm.lb2 %> </a>
-    
-                                <%}%>
-                         
-                        
-                         <% }else { %>
-                            
-                              
-                            <%if (elm.p == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" && (elm.lb1 == label && elm.lb2 != 'Thing' )) {%>
-
-                                      <a class="badge bg-secondary text-decoration-none link-light"  href="/global_details/<%=elm.lb2%>"><%= elm.lb2 %> </a>
-
-                                <%}%>
-                        
-                    
-                          <%}%>
-                          
+                       <%entity.getTypes().forEach(type => {%>
+                          <a class="badge bg-secondary text-decoration-none link-light"  href="/global_details/<%=type%>"><%= type %> </a>
                          <% })%>
+                    <%}%>
 
-                   
+
                 </header>
                 <!-- Preview image figure-->
                 <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
                 <!-- Post content-->
                 <section class="mb-5">
 
-                    <% comments.records.forEach(function(comment){%>
+                    <% entity.getComments().forEach(comment => {%>
 
-                          <p class="fs-5 mb-4 lead"><b> <%= comment.comment %> </b> </p>
+                          <p class="fs-5 mb-4 lead"><b> <%= comment %> </b> </p>
 
-                   <% })%>
+                   <%})%>
 
                 </section>
             </article>
@@ -92,124 +72,25 @@
                 </div>
             </section>
         </div>
+
         <!-- Side widgets-->
         <div class="col-lg-4">
-            
-                <% if (isClass) { %>
-                
-                <!-- Individual Section-->
+
+
+            <% entity.getViews().forEach(view => {%>
+
                 <div class="card mb-8">
-                    <div class="card-header">Individuals</div>
+                    <div class="card-header"> <%= view.title %></div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12">
-
-                                <%- include('individuals');%>
-
+                                <%- include('individuals', {view: view}); %>
                             </div>
-            
                         </div>
                     </div>
                 </div>
-                
-            
-        <% } %>
-            
 
-
-            <!-- Compostion Section-->
-            <div class="card mb-8">
-                <div class="card-header">Composition</div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-8">
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Section Recette-->
-            <div class="card mb-8">
-                <div class="card-header">Recette</div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-8">
-                        
-                            <%-include('composition');%>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!-- Section Recette -->
-            <div class="card mb-8">
-                <div class="card-header">Origine</div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-8">
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Categories widget-->
-            <div class="card mb-8">
-                <div class="card-header">Nutritive Apport</div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <%- include('apport_nutritif');%>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <% if (isClass) { %>
-
-                  
-            <!-- Side widget-->
-            <div class="card mb-4">
-                <div class="card-header">Related Class</div>
-
-                <div class="card-body">
-                    <div class="row">
-
-                        <div class="col-sm-12">
-
-                            <%- include('related');%>
-
-
-                        </div>
-        
-                    </div>
-                </div>
-
-            </div>
-
-
-            <% } %>
-
-
-
-
-
-
+              <%})%>
 
         </div>
     </div>
