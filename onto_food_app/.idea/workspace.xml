@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81367bf-f720-4412-812c-09a8c900b091" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_classes/graph_db.js" beforeDir="false" afterPath="$PROJECT_DIR$/db_classes/graph_db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../onto_food_ontology/ontoFood.owl" beforeDir="false" afterPath="$PROJECT_DIR$/../onto_food_ontology/ontoFood.owl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../query-result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../query-result.csv" afterDir="false" />
     </list>
@@ -68,7 +65,7 @@
       <workItem from="1624960587580" duration="307000" />
       <workItem from="1624960917088" duration="44000" />
       <workItem from="1624960962925" duration="35861000" />
-      <workItem from="1625035583485" duration="14277000" />
+      <workItem from="1625035583485" duration="14451000" />
     </task>
     <servers />
   </component>
