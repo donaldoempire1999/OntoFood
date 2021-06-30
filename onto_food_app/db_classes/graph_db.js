@@ -6,8 +6,8 @@ const { EnapsoGraphDBClient } = require('@innotrade/enapso-graphdb-client');
 // connection data to the running GraphDB instance
 const GRAPHDB_BASE_URL = 'http://localhost:7200',
     GRAPHDB_REPOSITORY = 'ontoFood',
-    GRAPHDB_USERNAME = 'donaldo2019',
-    GRAPHDB_PASSWORD = 'donaldo2019',
+    GRAPHDB_USERNAME = 'excel',
+    GRAPHDB_PASSWORD = '52191272',
     GRAPHDB_CONTEXT_TEST = 'http://www.ontotext.com/explicit';
 
 const DEFAULT_PREFIXES = [
