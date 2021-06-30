@@ -28,7 +28,11 @@ router.get('/text_search/', function (req , res){
 
 .post('/text_search/', function (req, res){
 
-  res.render('search_result')
+  const search_word = req.body.search_word;
+
+  console.log(search_word);
+
+  res.render('search_result', {search_word: search_word})
 
 })
 
