@@ -12,7 +12,7 @@ const Access = require('../db_classes/access');
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  Access.getClassByIndividuals().then(res => {
+  Access.getClassByIndividuals().then(resultat => {
 
      res.render('index', {title: 'title'})
 
