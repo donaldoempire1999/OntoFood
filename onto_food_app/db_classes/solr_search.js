@@ -41,9 +41,13 @@ class SolrSearch {
                 //Contient les resultats de recherche
                 let result =  res.response.docs;
 
-                let res_uri = result.map(elm => elm.s[0]);
+                result = result.filter(elm => elm.p[0] !== EnapsoGraphDBClient.PREFIX_OWL.iri.concat("disjointWith"))
+
+                let res_uri = result.map(elm => elm.s[0]).concat(result.map(elm => elm.o[0])) // ici je prends les parties à gauche et les parties à droite
 
                 res_uri = Array.from(new Set(res_uri)); //Eliminer les doublons
+
+                res_uri = res_uri.filter(elm => elm.search("http://www.ontoFood.fr/") !== -1);
 
                 resolve(res_uri);
 
