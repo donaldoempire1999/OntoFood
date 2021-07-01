@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./header'); %>
+
+</head>
+
+<body>
+  <main id="main">
+    <!--==========================
+      Operation Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Opérations</h3>
+          <p>Effectuer une operation sur la base de connaissances.</p>
+        </header>
+
+        <!-- <div class="float-right d-none d-lg-block" style="border-color: blue;">
+              <form class="form-inline">
+                <input class="form-control mr-sm-5" type="search" placeholder="AJouter" aria-label="Ajouter">
+              </form>
+        </div> -->
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <button class="btn btn-primary" id="btnAdd" style="float: right;">Classe</button>
+              <p class="description">Ajouter une classe (et/ou une sous classe)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
+              <button class="btn btn-secondary" type="submit" id="btnMod" style="float: right;">Object Properties</button>
+              <p class="description">Ajouter un object Properties</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <button class="btn btn-info" type="submit" id="btnCon" style="float: right;">Data Properties</button>
+              <p class="description">Ajouter un Data Properties</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <button class="btn btn-success" type="submit" id="btnReq" style="float: right;">Individuals</button>
+              <p class="description">Ajouter des Individus.</p>
+            </div>
+          </div>
+        </div>
+            <!--===== Fenetre d'ajout Classe===========-->
+            <div class="bg-modalAdd">
+                <div class="modal-content"> 
+
+                  <div class="close_Add">+</div>
+                  <p style="text-align: center;">
+                    Ajouter une Classe.
+                  </p>
+                  <form method="" action="" style="float: right;" class="form">
+                    <label>Nom de Classe:</label>
+                    <input type="" name="" placeholder="name"><br>
+                    <label>Sous classe de:</label>
+                    <select>
+                      <option>things</option>
+                      <option>aliments</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Soumettre" class="btn btn-success">
+                  </form>
+                </div>
+              </div>
+              <!--===== Fenetre d'ajout Object Properties =========-->
+               <div class="bg-modalMod">
+                <div class="modal-content"> 
+
+                  <div class="close_Mod">+</div>
+                  <p style="text-align: center;">
+                    Ajouter un Object properties.
+                  </p>
+                  <form method="" action="">
+                    <label>Nom de La Propriété:</label>
+                    <input type="" name="" placeholder="name"><br>
+                    <label>Sous Propriété de:</label>
+                    <select>
+                      <option>datathings</option>
+                      <option>se_mange_avec</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Soumettre" class="btn btn-success">
+                  </form>
+                </div>
+              </div>
+
+               <!--==== Fenetre d'ajout Data Properties=======-->
+               <div class="bg-modalCon">
+                <div class="modal-content"> 
+
+                  <div class="close_Con">+</div>
+                  <p style="text-align: center;">
+                    Ajouter une Data Properties.
+                  </p>
+                  <form method="" action="">
+                    <label>Nom de La Propriété:</label>
+                    <input type="" name="" placeholder="name" class="input-form"><br>
+                    <label>Sous Propriété de:</label>
+                    <select>
+                      <option>nom</option>
+                      <option>origine</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Soumettre" class="btn btn-success">
+                  </form>
+                </div>
+              </div>
+
+               <!--===== Fenetre d'ajout Individuals =====-->
+               <div class="bg-modalReq">
+                <div class="modal-content"> 
+
+                  <div class="close_Req">+</div>
+                  <p style="text-align: center;">
+                    Ajouter un individuals.
+                  </p>
+                  <form class="form-inline my-5 my-lg-0">
+                    <label>Nom de L'individue:</label>
+                    <input type="" name="" placeholder="name"><br>
+                    <br>
+                    <input type="submit" value="Soumettre" class="btn btn-success">
+                  </form>
+                </div>
+              </div>
+              <!--=== Fin =====-->
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>ontoFoods</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">Excel Sime</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <script type="text/javascript">
+  document.getElementById('btnAdd').addEventListener('click', function(){
+    document.querySelector('.bg-modalAdd').style.display = 'flex';
+    
+  });
+  document.querySelector('.close_Add').addEventListener('click', function(){
+    document.querySelector('.bg-modalAdd').style.display = 'none';
+  });</script>
+
+  <script type="text/javascript">
+  document.getElementById('btnMod').addEventListener('click', function(){
+    document.querySelector('.bg-modalMod').style.display = 'flex';
+    
+  });
+  document.querySelector('.close_Mod').addEventListener('click', function(){
+    document.querySelector('.bg-modalMod').style.display = 'none';
+  });</script>
+
+  <script type="text/javascript">
+  document.getElementById('btnCon').addEventListener('click', function(){
+    document.querySelector('.bg-modalCon').style.display = 'flex';
+    
+  });
+  document.querySelector('.close_Con').addEventListener('click', function(){
+    document.querySelector('.bg-modalCon').style.display = 'none';
+  });</script>
+
+  <script type="text/javascript">
+  document.getElementById('btnReq').addEventListener('click', function(){
+    document.querySelector('.bg-modalReq').style.display = 'flex';
+    
+  });
+  document.querySelector('.close_Req').addEventListener('click', function(){
+    document.querySelector('.bg-modalReq').style.display = 'none';
+  });</script>
+
+  <!-- Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

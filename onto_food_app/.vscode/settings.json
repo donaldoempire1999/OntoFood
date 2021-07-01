@@ -13,7 +13,7 @@
         "**/*.jprf": true,
         "**/*.prf": true,
         "**/orphaned-proofs.prf": true,
-        "**/*_adt.pvs": true,
+        "**/*_adt.pvs": false,
         "**/*.log": true,
         "**/.vscode": true
     }
