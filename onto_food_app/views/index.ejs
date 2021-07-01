@@ -25,7 +25,7 @@
     <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
       <div class="box">
         <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-        <button class="btn btn-primary" id="btnAdd" style="float: right;">Ajouter</button>
+        <button class="btn btn-primary" id="btnAdd" style="float: right;">Ajouter</button> <!-- quand tu clique ici sa renvoir vers operation.ejs-->
         <p class="description">Remplir la base de connaissance</p>
       </div>
     </div>
@@ -33,7 +33,7 @@
     <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
       <div class="box">
         <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-        <button class="btn btn-secondary" type="submit" id="btnMod" style="float: right;">Modifier</button>
+        <button class="btn btn-secondary" type="submit" id="btnMod" style="float: right;">Modifier</button><!-- quand tu clique ici sa renvoir vers result_page.ejs-->
         <p class="description">Connecter vous et Modifier</p>
       </div>
     </div>
@@ -41,7 +41,7 @@
     <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
       <div class="box">
         <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-        <button class="btn btn-info" type="submit" id="btnCon" style="float: right;">Consulter</button>
+        <button class="btn btn-info" type="submit" id="btnCon" style="float: right;">Consulter</button><!-- quand tu clique ici sa renvoir vers result_page.ejs-->
         <p class="description">Visiter les information disponible dans les bases de connaissance</p>
       </div>
     </div>
@@ -49,121 +49,13 @@
     <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
       <div class="box">
         <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-        <button class="btn btn-success" type="submit" id="btnReq" style="float: right;">Emettre une requète</button>
+        <button class="btn btn-success" type="submit" id="btnReq" style="float: right;">Emettre une requète</button><!-- quand tu clique ici sa renvoir vers resquest_page.ejs-->
         <p class="description">Saisissez des requete sur le OWL.</p>
       </div>
     </div>
   </div>
 
-  <!--===== Fenetre d'ajout===========-->
-  <div class="bg-modalAdd">
-    <div class="modal-content"> 
-
-      <div class="close_Add">+</div>
-      <p>
-        Ajouter des infos
-      </p>
-      <div class="">
-      <form method="" action="" style="float: right;">
-        <label>Ajouter une classe:</label>
-        <input type="" name="" placeholder="name">
-        <label>Ajouter une propriétés:</label>
-        <input type="" name="" placeholder="classe"><br>
-        <label>Ajouter un :</label>
-        <input type="" name="" placeholder="propriétés">
-        <label>Ajouter un individu:</label>
-        <input type="" name="" placeholder="individus">
-        <br>
-        <a href="" class="button">submit</a>
-      </form>
-    </div>
-    </div>
-  </div>
-  <!--===== Fenetre de modification =========-->
-   <div class="bg-modalMod">
-    <div class="modal-content"> 
-
-      <div class="close_Mod">+</div>
-      <p>
-        Modifier
-      </p>
-      <form method="" action="">
-        <input type="" name="" placeholder="name">
-        <input type="" name="" placeholder="prenom">
-        <a href="" class="button">submit</a>
-      </form>
-    </div>
-  </div>
-
-   <!--==== Fenetre de consultation =======-->
-   <div class="bg-modalCon">
-    <div class="modal-content"> 
-
-      <div class="close_Con">+</div>
-      <p>
-        Consulter
-      </p>
-      <form method="" action="">
-        <input type="" name="" placeholder="name">
-        <input type="" name="" placeholder="prenom">
-        <a href="" class="button">submit</a>
-      </form>
-    </div>
-  </div>
-
-   <!--===== Fenetre de requète =====-->
-   <div class="bg-modalReq">
-    <div class="modal-content"> 
-
-      <div class="close_Req">+</div>
-      <p>
-        Requète
-      </p>
-      <form class="form-inline my-5 my-lg-0">
-        <input class="form-control mr-sm-5" type="search" placeholder="Resquest..." aria-label="requete">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Lancer</button>
-
-      </form>
-    </div>
-  </div>
-  <!--=== Fin =====-->
-
   </div>
 </section>
 
-<script type="text/javascript">
-  document.getElementById('btnAdd').addEventListener('click', function(){
-    document.querySelector('.bg-modalAdd').style.display = 'flex';
-    
-  });
-  document.querySelector('.close_Add').addEventListener('click', function(){
-    document.querySelector('.bg-modalAdd').style.display = 'none';
-  });</script>
-
-  <script type="text/javascript">
-  document.getElementById('btnMod').addEventListener('click', function(){
-    document.querySelector('.bg-modalMod').style.display = 'flex';
-    
-  });
-  document.querySelector('.close_Mod').addEventListener('click', function(){
-    document.querySelector('.bg-modalMod').style.display = 'none';
-  });</script>
-
-  <script type="text/javascript">
-  document.getElementById('btnCon').addEventListener('click', function(){
-    document.querySelector('.bg-modalCon').style.display = 'flex';
-    
-  });
-  document.querySelector('.close_Con').addEventListener('click', function(){
-    document.querySelector('.bg-modalCon').style.display = 'none';
-  });</script>
-
-  <script type="text/javascript">
-  document.getElementById('btnReq').addEventListener('click', function(){
-    document.querySelector('.bg-modalReq').style.display = 'flex';
-    
-  });
-  document.querySelector('.close_Req').addEventListener('click', function(){
-    document.querySelector('.bg-modalReq').style.display = 'none';
-  });</script>
 <%- include('footer');%>
