@@ -28,10 +28,6 @@ router.get('/text_search/', function (req , res){
 
   Access.searchWord(search_word).then(resp => {
 
-    console.log("Ok");
-
-    console.log(resp)
-
     res.render('search_result', {search_word: search_word, results: resp})
 
 

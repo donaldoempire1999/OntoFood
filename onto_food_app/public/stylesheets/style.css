@@ -10841,49 +10841,27 @@ textarea.form-control-lg {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-body{
-  font-family: 'Arimo', sans-serif;
-  margin: 0;
-  padding: 0;
-}
- 
-/* Partie header */
-header{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  margin:10px 20px;
-}
-header .left{
-  display:flex;
-  flex-wrap:wrap;
-}
-header p{
-  margin-right: 10px;
-  color: #787878;
-  cursor:pointer;
-}
-header p:hover{
-  color: #000;
-}
-header .right{
-  display: flex;
-  flex-wrap:wrap;
-}
-header .right svg{
-  height: 30px;
-  width: 30px;
-  margin-top: 10px;
-  margin-right: 10px;
-  cursor:pointer;
-}
-header .right p.user{
-  font-size: 30px;
-  margin-top: 10px;
-  color: #595959;
-}
-/* Fin de la partie header */
 
 /* Partie principale */
 .main{

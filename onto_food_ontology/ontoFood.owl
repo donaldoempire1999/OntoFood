@@ -387,6 +387,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/Aliment">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>La grande classe des Aliments, nécéssaire pour la cuisson des repas. Ils entre dans le preparation de nombreux mets.</rdfs:comment>
         <rdfs:label>Aliment</rdfs:label>
     </owl:Class>
     
@@ -414,6 +415,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/Boisson">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Les boissons, ont distingue plusieurs boissons.</rdfs:comment>
         <rdfs:label>Boisson</rdfs:label>
     </owl:Class>
     
@@ -442,6 +444,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/Complément">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Les complements, utilsés dans les Mets avec compléments.</rdfs:comment>
         <rdfs:label>Complément</rdfs:label>
     </owl:Class>
     
@@ -656,6 +659,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:Class rdf:about="http://www.ontoFood.fr/Maladie">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>On distingue plusieurs sortes de maladies , les maladies nutritives (Kwasokor ,Beriberi) ou des maladies anoboliques: Diabète.</rdfs:comment>
         <rdfs:label>Maladie</rdfs:label>
     </owl:Class>
     
@@ -1130,6 +1134,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
 
     <owl:NamedIndividual rdf:about="http://www.ontoFood.fr/banne_malaxée">
         <www2:est_composé_de rdf:resource="http://www.ontoFood.fr/banane"/>
+        <rdfs:comment>Banane Malaxée , spécialité de l&apos;Ouest Cameroun, est un plat très populaire. D&apos;ailleurs il a eu à s&apos;exporter dans plusieurs autres regions, et prend notament plusiseurs formes, en fonction des ingredients et des goûts.</rdfs:comment>
         <rdfs:label>banane malaxée</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1220,6 +1225,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/eau_de_cuisine"/>
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/mais"/>
         <www2:a_pour_nom_conv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">couscous_mais</www2:a_pour_nom_conv>
+        <rdfs:comment>Le traditionnel couscous mais, c&apos;est un complément typiquement africain, il se mange dans de nombreux pays.</rdfs:comment>
         <rdfs:label>couscous mais</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1231,6 +1237,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <rdf:type rdf:resource="http://www.ontoFood.fr/MetAvecComplement"/>
         <www2:est_composé_de rdf:resource="http://www.ontoFood.fr/couscous_mais"/>
         <www2:est_composé_de rdf:resource="http://www.ontoFood.fr/sauce_ndolè"/>
+        <rdfs:comment>Couscous Mais sauce ndolè, spécialité du littoral Cameroun , notamment à travers leur fameux leur sauce (sauce ndolè) qui est un plat Mondialement reconnu.</rdfs:comment>
         <rdfs:label>couscous mais  sauce ndolè</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1615,7 +1622,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <rdf:type rdf:resource="http://www.ontoFood.fr/Nutriment"/>
         <www2:a_pour_nom_conv>lipides</www2:a_pour_nom_conv>
         <www2:a_pour_val_kcal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.14</www2:a_pour_val_kcal>
-        <rdfs:label>llipides</rdfs:label>
+        <rdfs:label>lipides</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1805,6 +1812,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
     <owl:NamedIndividual rdf:about="http://www.ontoFood.fr/riz">
         <rdf:type rdf:resource="http://www.ontoFood.fr/Céréale"/>
         <www2:a_pour_nom_conv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riz</www2:a_pour_nom_conv>
+        <rdfs:comment>Le riz est un céréeale largement d&quot;gusté dans le monde , il entre dans la preparation de plusieurs type de riz, qui varient en fonction des regions.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riz</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1857,6 +1865,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/huile_arachide"/>
         <www2:se_prepare_avec rdf:resource="http://www.ontoFood.fr/sel_de_cuisine"/>
         <www2:a_pour_nom_conv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce eru</www2:a_pour_nom_conv>
+        <rdfs:comment>La sauce eru , faite à base de feuille de Eru , d&apos;huile.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce eru</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1868,6 +1877,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
         <rdf:type rdf:resource="http://www.ontoFood.fr/MetAvecComplement"/>
         <www2:est_composé_de rdf:resource="http://www.ontoFood.fr/fufu"/>
         <www2:est_composé_de rdf:resource="http://www.ontoFood.fr/sauce_eru"/>
+        <rdfs:comment>Spécialité du nord-Ouest Cameroun, le fufu sauce eru est plat très dégusté au  Cameroun.</rdfs:comment>
         <rdfs:label>sauce eru avec le fufu</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1935,6 +1945,7 @@ Dans le cas d&apos;un met sans complément on entre aussi dans la préparation c
     <owl:NamedIndividual rdf:about="http://www.ontoFood.fr/sauce_okok">
         <rdf:type rdf:resource="http://www.ontoFood.fr/SauceLegumesFeuiles"/>
         <www2:a_pour_nom_conv rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce okok</www2:a_pour_nom_conv>
+        <rdfs:comment>La sauce OKOK , spécialité de la region du Centre Cameroun. Plat local très dégusté.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce okok</rdfs:label>
     </owl:NamedIndividual>
     

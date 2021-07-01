@@ -101,7 +101,7 @@ class GraphDBDao{
 
         return new Promise((resolve , reject) => {
 
-            let query = "select ?label ?comment  where {<" +
+            let query = "select ?label ?comment ?type  where {<" +
                 uri + "> rdfs:label ?label. optional{ <"
                   + uri + "> rdfs:comment ?comment.}" +
                 "}"
