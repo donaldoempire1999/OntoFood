@@ -97,6 +97,26 @@ class GraphDBDao{
      }
 
 
+     getAllCommentsAndLabelAboutUri(uri){
+
+        return new Promise((resolve , reject) => {
+
+            let query = "select ?label ?comment  where {<" +
+                uri + "> rdfs:label ?label. optional{ <"
+                  + uri + "> rdfs:comment ?comment.}" +
+                "}"
+
+            console.log(query);
+
+            this.graphDBEndpoint.query(query).then(res => resolve(res))
+                .catch(err => reject(err))
+
+        })
+
+    }
+
+
+
      getCommentsAboutLabel(label){
 
         let query = "select ?comment where {" +

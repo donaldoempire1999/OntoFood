@@ -15,26 +15,25 @@
                     
                         <% if (entity.isClass) { %>
 
-                            Classe , avec des relations hierarchiques
+                            <span> Classe , avec des relations hierarchiques </span>
 
                          
                         <% }else{ %>
 
-                            Individual , avec des relations de types
+                            <span>Individual , avec des relations de types </span>
 
-                
-                          <%}%>
-                    
-                    </div>
-                   
+
                     <!-- Post categories-->
 
-                    <%if(!entity.isClass){%>
+                    <%entity.getTypes().forEach(type => {%>
 
-                       <%entity.getTypes().forEach(type => {%>
-                          <a class="badge bg-secondary text-decoration-none link-light"  href="/global_details/<%=type%>"><%= type %> </a>
-                         <% })%>
+                    <a class="badge bg-secondary text-decoration-none link-light"  href="/global_details/<%=type%>"><%= type %> </a>
+
+                    <% })%>
+
                     <%}%>
+                    </div>
+
 
 
                 </header>
@@ -79,7 +78,7 @@
 
             <% entity.getViews().forEach(view => {%>
 
-                <div class="card mb-8">
+                <div class="card mb-4">
                     <div class="card-header"> <%= view.title %></div>
                     <div class="card-body">
                         <div class="row">

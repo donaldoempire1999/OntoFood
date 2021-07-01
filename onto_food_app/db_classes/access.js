@@ -2,17 +2,48 @@ let GraphDBDao = require('./graph_db')
 
 const Class = require('./class');
 const Individual = require('./individual');
+const SolrSearch = require('./solr_search');
 
 module.exports = class Access{
 
     static gb = GraphDBDao.getGraphDBDaoInstance();
 
+    static solr_search = SolrSearch.getSolrSearchInstance();
+
+    static searchWord(search_word){
+
+        return new Promise((resolve , reject) => {
+
+            this.solr_search.searchWord(search_word).then(res_uri => {
+
+                let promises_uri = res_uri.map(x => {
+
+                    let promise = Access.gb.getAllCommentsAndLabelAboutUri(x)
+
+                    promise.catch(err => console.log(err))
+
+                    return promise;
+
+                });
+
+                Promise.all(promises_uri).then(resp => {
+
+                    console.log("Resultat de la requête formatée!!!")
+
+                    resolve(resp);
+
+                }).catch(err => reject(err));
+
+            });
+
+        });
+
+    }
+
     static addClass(labelClass){
 
 
     }
-
-
 
 
     static addProperties(properties_ressources){
