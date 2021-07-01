@@ -19,39 +19,41 @@
 </head>
 
 <body>
-    <div id="header" style="margin-top: 0px; margin-bottom: 25px;">
+    <form id="header" style="margin-top: 0px; margin-bottom: 25px;" method="post" action="/text_search">
         <div id="topbar" style="padding: 15px;">
             <p><h2 style="size: 100px;padding-left: 10px;">OntoFood</h2></p>
             <div id="searchbar" type="text" style="margin-left: 25px;">
-                <input  id="searchbartext" type="text" value="<%= search_word%>" />
+                <input  id="searchbartext" type="text" value="<%= search_word%>" name="search_word"/>
                 <button id="searchbarmic">
                     <p class="user"><i class="fa fa-search"></i></p>
                 </button>
             </div>
-
         </div>
         <div id="optionsbar">
         </div>
-    </div>
+    </form>
 
     <!-- Zone de resultat -->
     <div id="searchresultsarea">
+
         <p id="searchresultsnumber">About 155,000 results (0.56 seconds) </p>
-        <div class="searchresult">
-            <h2 style="font-size: 22px; margin-bottom: 5px;">Aliment</h2>
-            <a class="text-success">https://ontofood.com</a> <button>▼</button>
-            <p style="font-size: 16px;">In computer science, a lock or mutex (from mutual exclusion) is a synchronization mechanism for enforcing limits on access to a resource in an</p>
-            <p> environment where there are many threads of execution.</p>
-        </div>
 
-        <div class="searchresult">
-            <h2>Menu</h2>
-            <a>https://ontofood.com</a> <button>▼</button>
-            <p>In computer science, a lock or mutex (from mutual exclusion) is a synchronization mechanism for enforcing limits on access to a resource in an</p>
-            <p> environment where there are many threads of execution.</p>
-        </div>
+
+    <% results.forEach(result => { %>
+
+        <%result.records.forEach(record => { %>
+
+            <div class="searchresult">
+                <h2 style="font-size: 22px; margin-bottom: 5px;"> <%= record.label %> </h2>
+                <a class="text-success">https://ontofood.com</a> <button>▼</button>
+                <p style="font-size: 16px;"> <%= record.comment %> </p>
+            </div>
+
+        <%})%>
+
+        <%})%>
+
     </div>
-
 
 </body>
 

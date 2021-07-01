@@ -1,26 +1,30 @@
 let SolrNode =  require('solr-node');
+const { EnapsoGraphDBClient } = require('@innotrade/enapso-graphdb-client');
 
 require('log4js').getLogger('solr-node').level = 'DEBUG';
 
 class SolrSearch {
 
-    static solr_node_instance = null;
+    static solr_search = null;
+    solr_node_instance;
+    strQuery;
 
     static getSolrSearchInstance(){
 
-        if (SolrSearch.solr_node_instance == null){
+        if (SolrSearch.solr_search == null){
 
-            SolrSearch.solr_node_instance = new SolrNode({
+            SolrSearch.solr_search = new SolrSearch();
+            SolrSearch.solr_search.solr_node_instance  = new SolrNode({
                 host: 'localhost',
                 port: '8983',
                 core: 'ontoFood',
                 protocol: 'http',
             });
 
-            return SolrSearch.solr_node_instance;
+            return SolrSearch.solr_search;
         
         } else {
-            return this.solr_node_instance;
+            return SolrSearch.solr_search;
         }
         
     }
@@ -28,17 +32,25 @@ class SolrSearch {
 
     searchWord(search_word){
 
-        var strQuery = this.solr_node_instance.query().q('s: couscous mais sauce ndolè').start(0).rows(25);
+        return new Promise((resolve, reject) => {
 
-        this.solr_node_instance.search(strQuery).then(function(res, err){
+            this.strQuery  = this.solr_node_instance.query().q("s:" + search_word + " or o:" + search_word).start(0).rows(100)
 
-            console.log(res);
+            this.solr_node_instance.search(this.strQuery).then(function(res, err){
 
-            res.response.docs.forEach(element => {
+                //Contient les resultats de recherche
+                let result =  res.response.docs;
 
-                console.log(element.s + " " +  element.p +  " " + element.o);
-            });
-        })
+                let res_uri = result.map(elm => elm.s[0]);
+
+                res_uri = Array.from(new Set(res_uri)); //Eliminer les doublons
+
+                resolve(res_uri);
+
+
+            }).catch(err => reject(err))
+
+        });
 
     }
 
