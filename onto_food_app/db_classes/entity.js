@@ -3,6 +3,7 @@ let GraphDBDao = require('./graph_db')
 module.exports = class Entity {
 
     //Commun à tout le monde
+    uri = ""
     label = "";
     comments = [];
     isClass = false;
@@ -20,6 +21,14 @@ module.exports = class Entity {
 
     constructor(label = "") {
         this.label = label;
+    }
+
+    getURI(){
+        return this.uri;
+    }
+
+    setURI(uri){
+        this.uri = uri;
     }
 
 

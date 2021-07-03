@@ -1,0 +1,35 @@
+
+<table class="table  table-responsive colg-lg-4">
+    
+    <thead class="thead-inverse" style="margin-top: 2px;">
+        <tr>
+            <th>Commentaires</th>
+            <th>Auteurs</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+            <% entity.getComments().forEach(comment => {%>
+
+                <tr> 
+                    
+                    <td>
+
+                    <%= comment.comment %> </small> </p>
+
+                    </td>
+
+                    <td>
+
+                        unknown
+
+                    </td>
+
+                </tr>
+
+            <%})%>
+
+            
+        </tbody>
+</table>

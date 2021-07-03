@@ -30,7 +30,7 @@ module.exports =  class Individual extends Entity{
             {
                 title: "Entre dans preparation de ",
                 data: [],
-                color: [],
+                color: ["bg-secondary"],
                 filter: 'http://www.ontoFood.fr/entre_dans_la_preparation_de'
             },
 

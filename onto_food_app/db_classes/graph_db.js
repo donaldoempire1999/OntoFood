@@ -1,6 +1,7 @@
 "use strict"
 
 const { EnapsoGraphDBClient } = require('@innotrade/enapso-graphdb-client');
+const { response } = require('express');
 
 
 // connection data to the running GraphDB instance
@@ -21,6 +22,8 @@ const DEFAULT_PREFIXES = [
         iri: 'http://www.ontoFood.fr/'
     }
 ];
+
+
 
 
 class GraphDBDao{
@@ -64,6 +67,99 @@ class GraphDBDao{
     }
 
 
+    getAllCommentsAndLabelAboutUri(uri){
+
+        return new Promise((resolve , reject) => {
+
+            let query = "select ?label ?comment where {" +
+                "?uri rdfs:label ?label. optional{ ?uri rdfs:comment ?comment.}" +
+                "filter(?uri =<" + uri + ">)}"
+
+            this.graphDBEndpoint.query(query).then(response => {
+                  
+                  return response.records.length !== 0 ? resolve(response.records):resolve("not found");
+                  
+                }).catch(err => reject(err))
+
+        });
+
+    }
+
+    getLabel(uri, index){
+
+        uri = "<".concat(uri).concat(">");
+        
+        return new Promise((resolve, reject) => {
+
+            let query = "select ?label where {\n" +
+            "?uri rdfs:label ?label.\n" +
+            "filter(?uri =" + uri + ")}" 
+
+           this.graphDBEndpoint.query(query).then(response => {
+
+                return response.records.length !== 0 ? resolve({ 
+                    label: response.records[0].label, 
+                    index: index
+                })  : resolve("not found");
+
+            }).catch(err => reject(err))
+
+        });     
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    addCommentOrFact(uri , text , fact = false , comment = false ){
+
+        let p = ""; 
+
+        let query = "";
+
+        if (comment = true){
+
+            p = "<".concat(EnapsoGraphDBClient.PREFIX_RDFS.iri.concat('comment')).concat(">");
+
+        }else{
+
+            p = "onto:a_pour_fait";
+
+        }
+
+        query = 'insert data { {'+  uri + '' + p + ' "' + text + '"}' +  '}'
+
+        console.log(query);
+
+
+         return this.graphDBEndpoint.update(query)
+      
+        }
+
+
+    getURI(label){
+
+
+        let query = "select distinct ?uri where {\n" +
+            "    ?uri rdfs:label ?lb1.\n" +
+            "      filter(?lb1 = '"+label+"')\n" +
+            " }"
+
+        return this.graphDBEndpoint.query(query);
+
+    }
+
+
+   
+
 
     getAllClassByINdividualsNumber(){
         return this.graphDBEndpoint.query(`select ?label  (COUNT(?indi) as ?num_indi)  where { 
@@ -97,30 +193,64 @@ class GraphDBDao{
      }
 
 
-     getAllCommentsAndLabelAboutUri(uri){
+
+     getAllObjectProperties(){
 
         return new Promise((resolve , reject) => {
 
-            let query = "select ?label ?comment ?type  where {<" +
-                uri + "> rdfs:label ?label. optional{ <"
-                  + uri + "> rdfs:comment ?comment.}" +
-                "}"
+            let query = "select ?s where { "+
+                "?s rdf:type owl:ObjectProperty."+
+             "}"
 
-            console.log(query);
+             this.graphDBEndpoint.query(query).then(response => {
 
-            this.graphDBEndpoint.query(query).then(res => resolve(res))
-                .catch(err => reject(err))
+                let properties = response.records.map(row => row.s);
 
-        })
-
+                resolve(properties)
+             
+            
+            }).catch(err => reject(err)); 
+         
+        
+        });
+    
     }
+
+
+
+    getAllDataProperties(){
+
+        return new Promise((resolve , reject) => {
+
+            let query = "select ?s where { "+
+                "?s rdf:type owl:DatatypeProperty."+
+             "}"
+
+             this.graphDBEndpoint.query(query).then(response => {
+
+                let properties = response.records.map(row => row.s);
+
+                resolve(properties);
+             
+            
+            }).catch(err => reject(err)); 
+         
+        
+        });
+    
+    }
+
+
 
 
 
      getCommentsAboutLabel(label){
 
+        if(label.search('\'') != -1){label = escape(label)}
+
+
         let query = "select ?comment where {" +
-            "?s rdfs:label '" + escape(label) + "';" +
+            "?s rdfs:label '" +label + "';" +
             "rdfs:comment ?comment.}"
 
          return this.graphDBEndpoint.query(query);
@@ -149,7 +279,7 @@ class GraphDBDao{
 
         return new Promise(function(resolve , reject){
 
-           let resulat = {label: label , comments: "", infos: "", isClass: "",  types: "" };
+           let resulat = {uri: "",label: label , comments: "", infos: "", isClass: "",  types: "" };
 
            //Obtenir toutes les informations par rapport à l'entité et les autres
     
@@ -173,6 +303,18 @@ class GraphDBDao{
                 console.log("voici les commentaires...");
                 
                 console.log(comments);
+
+                return myClass.getURI(label);
+
+            }).then(uri_res => {
+
+                console.log("Voici L'URI de notre ressource...");
+
+                let uri = uri_res.records[0].uri;
+
+                resulat.uri = "<".concat(uri).concat(">");
+
+                console.log(resulat.uri);
 
                 resolve(resulat);
 

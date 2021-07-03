@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <img id="searchbarimage" src="" />
-<head>
+<head style="position: fixed;">
     <title>OntoFood Search</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
     <meta charset="utf-8" />
@@ -34,22 +34,20 @@
     </form>
 
     <!-- Zone de resultat -->
-    <div id="searchresultsarea" style="margin-left: 220px;">
+    <div id="searchresultsarea" style="margin-left: 220px; overflow: auto;">
 
         <p id="searchresultsnumber">About <%= results.length %> results (0.56 seconds) </p>
 
 
     <% results.forEach(result => { %>
 
-        <%result.records.forEach(record => { %>
 
             <div class="searchresult">
-                <a href="/global_details/<%=record.label%>"><h2 style="font-size: 19px; margin-bottom: 5px;"> <%= record.label.charAt(0).toUpperCase() + record.label.slice(1) %> </h2> </a>
+                <a href="/entity/get/<%=result.label%>"><h2 style="font-size: 19px; margin-bottom: 5px;"> <%= result.label.charAt(0).toUpperCase() + result.label.slice(1) %> </h2> </a>
                 <a class="text-success">https://ontofood.com</a> <button>▼</button>
-                <p style="font-size: 15px; margin-top: 3px;"> <%= record.comment %> </p>
+                <p style="font-size: 15px; margin-top: 3px;"> <%= result.comment %> </p>
             </div>
 
-        <%})%>
 
         <%})%>
 

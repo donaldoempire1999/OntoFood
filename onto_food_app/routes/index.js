@@ -1,60 +1,29 @@
 "use strict"
 
 let express = require('express');
+
 let router = express.Router();
-let SolrSearch = require('../db_classes/solr_search');
-const Access = require('../db_classes/access');
+
+//Routeur pour la recherche textuelle
+let searchRouter = require('./search')
+
+//Routeur pour les actions Crud dans la base de connaissance
+let crud_router = require('./crud') 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-
-  Access.getClassByIndividuals().then(resultat => {
-
      res.render('index', {title: 'title'})
-
-  })
-
 });
 
-router.get('/text_search/', function (req , res){
 
-  res.render('search');
-
-})
-
-.post('/text_search/', function (req, res){
-
-  const search_word = req.body.search_word;
-
-  Access.searchWord(search_word).then(resp => {
-
-    res.render('search_result', {search_word: search_word, results: resp})
+// Pour les CRUDS 
+router.use('/entity',crud_router);
 
 
-  }).catch(err => {
-
-    console.log(err);
-
-    res.render('search_result', {search_word: search_word})
+//Pour la recherche Textuelle
+router.use('/text_search', searchRouter);
 
 
-  });
-
-})
-
-router.get('/global_details/:label', function (req, res ){
-
-  Access.getEntityByLabel(req.params['label']).then(entity => {
-
-    entity.views = entity.views.filter(view => view.data.length > 0);
-
-    res.render('global_details', {entity: entity});
-
-  }).catch(err => {
-    console.log(err);
-  })
-
-})
 
 
 module.exports = router;

@@ -11179,6 +11179,7 @@ html, body {
 #searchresultsarea {
   margin-left: 150px;
   font-family: 'Arial';
+  width: 1000px;
 }
 
 #searchresultsnumber {

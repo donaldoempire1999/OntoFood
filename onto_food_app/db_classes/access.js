@@ -12,32 +12,24 @@ module.exports = class Access{
 
     static searchWord(search_word){
 
-        return new Promise((resolve , reject) => {
+        return Access.solr_search.searchWord(search_word);
+     
+    }
 
-            this.solr_search.searchWord(search_word).then(res_uri => {
 
-                let promises_uri = res_uri.map(x => {
+    static addCommentOrFact(uri , text , choice){
 
-                    let promise = Access.gb.getAllCommentsAndLabelAboutUri(x)
+        let comment = false, fact = false;
 
-                    promise.catch(err => console.log(err))
+        if (choice === "comment"){
+            comment = true
+        }else{
+            fact = true;
+        }
 
-                    return promise;
-
-                });
-
-                Promise.all(promises_uri).then(resp => {
-
-                    console.log("Resultat de la requête formatée!!!")
-
-                    resolve(resp);
-
-                }).catch(err => reject(err));
-
-            });
-
-        });
-
+        
+        return Access.gb.addCommentOrFact(uri, text , fact , escape(comment));
+   
     }
 
     static addClass(labelClass){
@@ -86,6 +78,8 @@ module.exports = class Access{
 
                     entity = new Class();
 
+                    entity.setURI(res.uri);
+
                     //Tout les commentaires par rapport à cette entité
                     entity.setComments(res.comments.records);
 
@@ -107,6 +101,8 @@ module.exports = class Access{
                 }else {
 
                     entity = new Individual();
+
+                    entity.setURI(res.uri);
 
                     entity.setLabel(label)
 
