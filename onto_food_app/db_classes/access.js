@@ -17,6 +17,28 @@ module.exports = class Access{
     }
 
 
+
+    static getClassByIndividuals(){
+
+        return new Promise((resolve , reject) => {
+
+            Access.gb. getAllClassByINdividualsNumber().then(response => {
+
+                let classes = response.records;
+
+                let filter_classes = classes.filter((ele , pos) => classes.indexOf(ele) === pos);
+
+                resolve(filter_classes);
+            
+            })
+          
+            .catch(err => reject(err))            
+        
+        });
+
+    }
+
+
     static addCommentOrFact(uri , text , choice){
 
         let comment = false, fact = false;
@@ -48,24 +70,7 @@ module.exports = class Access{
 
     }
 
-    static getClassByIndividuals(){
-
-        return new Promise((resolve, reject) => {
-
-            Access.gb.getAllClassByINdividualsNumber().then(res => {
-
-                resolve(res)
-
-            }).catch(err => {
-
-                console.log(err)
-
-            })
-
-        })
-
-    }
-
+    
     static getEntityByLabel(label){
 
         return new Promise((resolve,reject) => {

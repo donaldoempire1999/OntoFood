@@ -40,13 +40,15 @@ crud_router.get('/get/:label', function (req, res ){
 })
 
 
-crud_router.get('/add/class', (req, res) => {
+crud_router.get('/populate', (req, res) => {
+
+  Access.getClassByIndividuals().then(classes => {
+    
+    res.render('populate',  {classes: classes});
+  
+  });
+
+});
 
 
-  res.render('operations')
-
-
-})
-
-
-  module.exports = crud_router;
+module.exports = crud_router;

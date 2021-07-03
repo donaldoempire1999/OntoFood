@@ -162,11 +162,12 @@ class GraphDBDao{
 
 
     getAllClassByINdividualsNumber(){
-        return this.graphDBEndpoint.query(`select ?label  (COUNT(?indi) as ?num_indi)  where { 
+        return this.graphDBEndpoint.query(`select ?label (COUNT(?indi) as ?num_indi) ?comment  where { 
            ?class rdfs:label ?label;
                 rdf:type rdfs:Class.
-           OPTIONAL { ?indi rdf:type ?class }
-            } group by ?label `,
+           OPTIONAL { ?indi rdf:type ?class.}
+           OPTIONAL {?class rdfs:comment ?comment}
+            } group by ?label ?comment `,
         { transform: 'toJSON' })
     }
 

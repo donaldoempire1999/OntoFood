@@ -21,7 +21,7 @@ router.use('/entity',crud_router);
 
 
 //Pour la recherche Textuelle
-router.use('/text_search', searchRouter);
+router.use('/search', searchRouter);
 
 
 

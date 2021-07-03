@@ -7,7 +7,7 @@ const Access = require('../db_classes/access');
 
 
 
-search_router.get('/', function (req , res){
+search_router.get('/text', function (req , res){
 
     res.render('search');
   
@@ -15,7 +15,7 @@ search_router.get('/', function (req , res){
   
   
   
-  .post('/', function (req, res){
+  .post('/text', function (req, res){
   
     const search_word = req.body.search_word;
   
@@ -33,7 +33,14 @@ search_router.get('/', function (req , res){
   
     });
   
-  })
+  });
+
+
+  search_router.get('/recommandations', (req, res) => {
+
+    res.render('recommandations');
+
+  });
 
 
   module.exports = search_router;
