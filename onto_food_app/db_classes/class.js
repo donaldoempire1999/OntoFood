@@ -31,7 +31,7 @@ module.exports = class Class extends Entity{
                 title: "UpClass",
                 data: [],
                 color: ["bg-secondary"]
-            }
+            },
 
             ];
 

@@ -2,8 +2,7 @@ let SolrNode =  require('solr-node');
 const { EnapsoGraphDBClient } = require('@innotrade/enapso-graphdb-client');
 let GraphDBDao = require('./graph_db')
 
-
-require('log4js').getLogger('solr-node').level = 'DEBUG';
+const buildPaginator = require('pagination-apis');
 
 class SolrSearch {
 
@@ -11,6 +10,8 @@ class SolrSearch {
     solr_node_instance;
     strQuery;
     static gb = GraphDBDao.getGraphDBDaoInstance();
+    static numItemsPerPage = 8;
+
 
 
     static getSolrSearchInstance(){
@@ -193,7 +194,7 @@ class SolrSearch {
                  
                  //Appliquons un petit filtre
                  
-                 results = [... new Set(results)];
+                 //results = results.filter((ele , pos) => results.indexOf(ele) === pos);
 
 
                  resolve(results);
@@ -218,7 +219,7 @@ class SolrSearch {
         return new Promise((resolve, reject) => {
 
 
-            this.strQuery  = this.solr_node_instance.query().q("s:" + search_word + "~10 or o:" + search_word + "~10 or p:" + search_word + "~10" ).start(0).rows(100);
+            this.strQuery  = this.solr_node_instance.query().q("s:" + search_word + "~0.9 or o:" + search_word + "~0.9 or p:" + search_word + "~0.9" ).start(0).rows(100);
 
             this.solr_node_instance.search(this.strQuery).then(function(res, err){
 
@@ -332,11 +333,14 @@ class SolrSearch {
                         console.log(pertinence_data_properties);
                        
                        
-                       console.log("----------ABOUT RELATIONS COMMENTS---------------");
+                        console.log("----------ABOUT RELATIONS COMMENTS---------------");
                         console.log(relations_about_comments);
 
-                       console.log("----------ABOUT SPECIAL COMMENTS------------------");
-                       console.log(relations_about_comments_special);
+                        console.log("----------ABOUT SPECIAL COMMENTS------------------");
+                        console.log(relations_about_comments_special);
+
+                        console.log("-------- PERTINENCE DATA PROPERTIES-------------------------")
+                        console.log(pertinence_data_properties);
 
                        
                         let results_for_comments = [];
@@ -361,9 +365,28 @@ class SolrSearch {
                              console.log("------------------RESULTS FOR PERTINENCE--------------");
                              console.log(results_for_pertinence);
 
-                             final_results = results_for_pertinence.concat(results_for_comments) //.filter(elm => elm.label != undefined && elm.comment != undefined );
+
+                             // Appliquons un ultime filtre
+
+                             final_results = results_for_pertinence;
+
+                             results_for_comments.forEach((result_for_comment) => {
+
+                                 let bool = final_results.some(final_result => final_result.label === result_for_comment.label);
+
+                                 if(bool === false){
+
+                                    final_results = final_results.concat(result_for_comment);
+                                 
+                                }
                                 
-                             resolve( final_results );
+                             
+                            });
+
+                            console.log("----------------------------PAGINATION ---------------------------");
+
+
+                            resolve( final_results );
                             
                         
                         }).catch(err => console.log(err))

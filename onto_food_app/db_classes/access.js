@@ -18,6 +18,19 @@ module.exports = class Access{
 
 
 
+    static getMetByRegionAndCountry(country , region ) {
+
+        return this.gb.getMetByRegionAndCounty(country, region);
+
+    }
+
+    static getMetByDisease(disease){
+
+        return this.gb.getMetsByDisease(disease);
+
+    }
+
+
     static getClassByIndividuals(){
 
         return new Promise((resolve , reject) => {
@@ -26,7 +39,20 @@ module.exports = class Access{
 
                 let classes = response.records;
 
-                let filter_classes = classes.filter((ele , pos) => classes.indexOf(ele) === pos);
+                let filter_classes = [];
+
+                classes.forEach((classe) => {
+
+                    let bool = filter_classes.some(filter_classe => filter_classe.label === classe.label);
+
+                    if(bool === false){
+
+                       filter_classes = filter_classes.concat(classe);
+                    
+                   }
+                   
+                
+               });
 
                 resolve(filter_classes);
             
@@ -50,7 +76,7 @@ module.exports = class Access{
         }
 
         
-        return Access.gb.addCommentOrFact(uri, text , fact , escape(comment));
+        return Access.gb.addCommentOrFact(uri, text , fact , comment);
    
     }
 
@@ -88,7 +114,16 @@ module.exports = class Access{
                     //Tout les commentaires par rapport à cette entité
                     entity.setComments(res.comments.records);
 
+                    //Ici on récupère les faits
+                    console.log("------------------- Afficher les faits------------------------")
+                    console.log(res.facts);
+                   entity.setFacts(res.facts);
+
                     entity.setLabel(label)
+
+                    //On récupère son image s'il en a 
+                    entity.setImage(res.image);
+
 
                     //C'est une classe ou non
                     entity.isClass = res.isClass;
@@ -109,7 +144,14 @@ module.exports = class Access{
 
                     entity.setURI(res.uri);
 
-                    entity.setLabel(label)
+                    entity.setLabel(label);
+
+                    //Ici on récupère les faits
+                    console.log("------------------- Afficher les faits------------------------")
+                    console.log(res.facts);
+                    entity.setFacts(res.facts);
+
+                    entity.setImage(res.image)
 
                     //Tout les commentaires par rapport à cette entité
                     entity.setComments(res.comments.records);

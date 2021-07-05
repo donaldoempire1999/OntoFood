@@ -6,24 +6,49 @@ let search_router = express.Router();
 const Access = require('../db_classes/access');
 
 
+function paginator(items, current_page, per_page_items) {
+  let page = current_page || 1,
+      per_page = per_page_items || 10,
+      offset = (page - 1) * per_page,
+
+      paginatedItems = items.slice(offset).slice(0, per_page_items),
+      total_pages = Math.ceil(items.length / per_page);
+
+  return {
+    page: page,
+    per_page: per_page,
+    pre_page: page - 1 ? page - 1 : null,
+    next_page: (total_pages > page) ? page + 1 : null,
+    total: items.length,
+    total_pages: total_pages,
+    data: paginatedItems
+  };
+}
+
 
 search_router.get('/text', function (req , res){
 
-    res.render('search');
+   res.render('search');
   
   })
   
   
   
-  .post('/text', function (req, res){
+  .get('/text/result', function (req, res){
   
-    const search_word = req.body.search_word;
-  
+
+    let page = parseInt((req.query.page));
+
+    let search_word =  req.query.search_word.toString();
+
     Access.searchWord(search_word).then(resp => {
-  
-      res.render('search_result', {search_word: search_word, results: resp})
-  
-  
+
+      let paginatedData = paginator(resp,  page, 10,);
+
+      console.log(paginatedData);
+
+      res.render('search_result', {search_word: search_word, results: paginatedData});
+
     }).catch(err => {
   
       console.log(err);
@@ -38,7 +63,7 @@ search_router.get('/text', function (req , res){
 
   search_router.get('/recommandations', (req, res) => {
 
-    res.render('recommandations');
+    res.render('recom');
 
   });
 

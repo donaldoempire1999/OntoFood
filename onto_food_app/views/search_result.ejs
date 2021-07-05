@@ -19,11 +19,12 @@
 </head>
 
 <body>
-    <form id="header" style="margin-top: 0px; margin-bottom: 25px;" method="post" action="/search/text">
+    <form id="header" style="margin-top: 0px; margin-bottom: 25px;" method="get" action="/search/text/result">
         <div id="topbar" style="padding: 15px;">
             <p><h2 style="size: 100px;padding-left: 10px;">OntoFood</h2></p>
             <div id="searchbar" type="text" style="margin-left: 25px;">
                 <input  id="searchbartext" type="text" value="<%= search_word %>" name="search_word"/>
+                <input type="number" value="1" name="page" hidden>
                 <button id="searchbarmic">
                     <p class="user"><i class="fa fa-search"></i></p>
                 </button>
@@ -36,10 +37,10 @@
     <!-- Zone de resultat -->
     <div id="searchresultsarea" style="margin-left: 220px; overflow: auto;">
 
-        <p id="searchresultsnumber">About <%= results.length %> results (0.56 seconds) </p>
+        <p id="searchresultsnumber">About <%= results.total %> results (0.56 seconds) </p>
 
 
-    <% results.forEach(result => { %>
+    <% results.data.forEach(result => { %>
 
 
             <div class="searchresult">
@@ -51,10 +52,72 @@
 
         <%})%>
 
+        <%if (results.total_pages > 1){%>
+
+
+        <nav aria-label="..." style="margin-top: 100px;" >
+
+            <ul class="pagination" >
+
+                <%if(results.pre_page >= 1){%>
+
+                    <li class="page-item ">
+                        <a class="page-link" href="/search/text/result?search_word=<%=search_word%>&page=<%=results.pre_page%>" tabindex="-1">Previous</a>
+                    </li>
+                <%}else{%>
+
+                <li class="page-item disabled ">
+                    <a class="page-link" href="/search/text/result?search_word=<%=search_word%>&page=<%=results.pre_page%>" tabindex="-1">Previous</a>
+                </li>
+
+                <%}%>
+
+            <%for(let i = 1; i <= results.total_pages;i++){%>
+
+
+                    <% if (i === results.page){%>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="/search/text/result?search_word=<%=search_word%>&page=<%=i%>"><%= i %> <span class="sr-only">(current)</span></a>
+                        </li>
+
+                    <%}else{%>
+
+                    <li class="page-item ">
+                      <a class="page-link" href="/search/text/result?search_word=<%=search_word%>&page=<%=i%>"><%= i %></a>
+                    </li>
+
+               <%}%>
+
+                <%}%>
+
+
+                    <%if (results.page === results.total_pages ){%>
+
+                        <li class="page-item  disabled">
+                            <a class="page-link" href="#" >Next</a>
+                        </li>
+
+                    <%}else{%>
+
+                        <li class="page-item ">
+                            <a class="page-link" href="/search/text/result?search_word=<%=search_word%>&page=<%=results.next_page%>">Next</a>
+                        </li>
+
+                    <%}%>
+
+            </ul>
+
+            </form>
+        </nav>
+
+        <%}%>
+
     </div>
 
 
 
 </body>
+
 
 </html>

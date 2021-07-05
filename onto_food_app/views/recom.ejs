@@ -1,0 +1,463 @@
+<%- include('./header')%>
+
+<!-- Page content-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article class="row">
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-0" style="margin-bottom: 45px"> Food/Nutrition Knowlegde</h1>
+                </header>
+
+                <p style="font-size: 18px;">
+
+                    Cette section permet aux malades ou au cuisiners de pouvoir avoir soit les mets adaptés à leur  maladies ou respectivement des plats qu'ils peuvent cuisinés dans une ceremonie par rapport à une region
+                    ou un pays. The Disease Knwolegde of OntoFood !!!!. Premièrement il faut choisir le mode et vous laisser  guider par l'assistant. Bonne découverte!!
+
+                </p>
+
+            </article>
+
+        </div>
+    </div>
+
+    <section class="mb-5">
+
+
+                     <div style="margin-bottom: 40px; margin-top: 15px;">
+
+
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="met_by_region_pays_mode" value="food" onchange="displayFoodTable()">
+                                <label class="form-check-label" for="met_by_region_pays_mode"> Food Listing  </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="disease_mode" value="disease" onchange="displayDiseaseTable()">
+                                <label class="form-check-label" for="disease_mode"> Nutritive Recommandations   </label>
+                            </div>
+
+                    </div>
+
+                    <div style="margin-top: 45px">
+
+
+                        <form id="form_mets_by_pays_region">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <input type="text"  autocomplete="off" class="form-control" placeholder="Entrez le nom du pays " id="country_input">
+                                    <div id="suggestions_pays"></div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text"  autocomplete="off" class="form-control form-control"  placeholder="Entrez le nom de sa region" id="region_input">
+                                    <div id="suggestions_regions"></div>
+                                </div>
+                                <div class="col-lg-4">
+
+                                    <button type="submit" class="btn btn-success btn-sm">Search</button>
+
+                                </div>
+                            </div>
+                        </form>
+
+                        <form id="form_met_by_disease">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <input type="text" id="input_disease"  autocomplete="off" class="form-control" placeholder="Entrez le nom de la maladie" id="country_input">
+                                    <div id="suggestions_diseases"></div>
+                                    <div></div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <button type="submit" class="btn btn-success btn-sm">Search</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+
+    </section>
+
+                     <div id="content"  style="margin-top: 50px;">
+
+                    </div>
+
+     </div>
+
+
+
+            <script>
+
+                //checkbox pour la recommandations nutritives
+                let met_by_region_pays_checkbox = document.getElementById("met_by_region_pays_mode");
+
+                //checkbox pour la foodList
+                let met_by_disease_checkbox = document.getElementById("disease_mode");
+
+                //Formulaire pour entrer le nom du pays et de la region
+                let form_met_by_pays_region = document.getElementById("form_mets_by_pays_region");
+
+                //formulaire pour entrer le nom de la maladie
+                let form_met_by_disease = document.getElementById("form_met_by_disease");
+
+                // Tous cacher au depart
+                form_met_by_pays_region.hidden = true;
+                form_met_by_disease.hidden = true;
+
+
+                //div content pour charger les elements issues du serveur
+                let div_content = document.getElementById("content");
+
+                //input pour ecrire le nom du pays
+                let country_input = document.getElementById("country_input");
+
+                //input pour entrer la region du pays
+                let region_input = document.getElementById("region_input");
+
+                //input pour entrer la maladie
+                let input_disease = document.getElementById("input_disease");
+
+                 //Div ou on va charger les suggestions de pays
+                let suggest_pays_div = document.getElementById("suggestions_pays");
+
+                //Div ou on va charger les suggestions de regions
+                let suggest_regions_div = document.getElementById("suggestions_regions");
+
+                //Div ou on va charger les suggestions sur les maladies
+                let suggest_diseases_div = document.getElementById("suggestions_diseases");
+
+
+                //Va contenir les mets et les differentes maladies
+                let metsByDiseases =  [];
+
+                //Va contenir les mets et les differentes regions
+                let metsByRegionAndPays = [];
+
+                //Listes des pays
+                let pays = [];
+
+                //Listes des regions
+                let regions = [];
+
+                //Liste des maladies
+                let diseases = [];
+
+                form_met_by_disease.addEventListener('submit', function (event){
+
+                    event.preventDefault();
+
+                    let disease = input_disease.value;
+
+                    let mets = [];
+
+                    //Ici on filtre les mets par rapport aux entrées de l'utilisateurs
+
+                    if(disease.length > 0){
+                        mets = metsByDiseases.mets.filter(item => item.disease === disease);
+                    }
+
+                    //Construction du tableau
+                    let table = "<thead class='thead-inverse' style='margin-top: 2px'><tr>";
+
+                    metsByDiseases.thead.forEach(th => table = table.concat("<th>" +th + "</th>"));
+
+                    table.concat("</thead></tr><tbody>");
+
+                    let results_found = 0;
+
+                    //Construction des lignes du tableau
+                    mets = mets.map(function (met) {
+
+                        let bg = 'badge bg-dark text-white ms-1 rounded-pill';
+
+                        results_found++;
+
+                        return "<tr><td><a href='#'><span class='" + bg + "'>" +
+
+                            met.met + "</a></td><td><span class='" + bg + "'>"
+
+                            + met.disease + "</a></td></tr>";
+
+                    });
+
+
+                    mets.forEach(met => table = table.concat(met));
+
+                    table = "<table style='font-size:17px;margin-left: 50px;' class='table  table-hover table-light col-lg-12'>" + table.concat("</tbody>") + "</table>";
+
+                    div_content.innerHTML = table;
+
+                });
+
+                form_met_by_pays_region.addEventListener('submit', (event) => {
+
+                    event.preventDefault();
+
+                    let pays = country_input.value;
+
+                    let region = region_input.value;
+
+                    let mets = [];
+
+                    //Ici on filtre les mets par rapport aux entrées de l'utilisateurs
+
+
+                    if(pays.length > 0 && region.length > 0){
+                        mets = metsByRegionAndPays.mets.filter(item => item.pays === pays && item.region === region);
+
+                    }else if(pays.length > 0 && region.length ===  0){
+                        mets = metsByRegionAndPays.mets.filter(item => item.pays === pays);
+                    }
+
+                    //Construction du tableau
+                    let table = "<thead class='thead-inverse' style='margin-top: 2px'><tr>";
+
+                    metsByRegionAndPays.thead.forEach(th => table = table.concat("<th>" +th + "</th>"));
+
+                    table.concat("</thead></tr><tbody>");
+
+                    let results_found = 0;
+
+                    //Construction des lignes du tableau
+                        mets = mets.map(function (met) {
+
+                            let bg = 'badge bg-dark text-white ms-1 rounded-pill';
+
+                            results_found++;
+
+                            return "<tr><td><a href='#'><span class='" + bg + "'>" +
+
+                                met.met + "</a></td><td><span class='" + bg + "'>" +
+
+                                met.region + "</a></td><td><span class='" + bg + "'>" + met.pays + "</a></td></tr>";
+
+                            });
+
+
+                            mets.forEach(met => table = table.concat(met));
+
+                            table = "<table style='font-size:17px;margin-left: 50px;' class='table  table-hover table-light col-lg-12'>" + table.concat("</tbody>") + "</table>";
+
+                            div_content.innerHTML = table;
+
+
+                });
+
+
+
+
+
+                input_disease.addEventListener('keyup', () => {
+
+                    let suggests = "";
+
+                    if(input_disease.value !== "") {
+
+                        let diseases_filter = diseases.filter(item => item.includes(input_disease.value));
+
+                        if(diseases_filter.length > 0){
+
+                            suggests = "<div class='suggestions'> <ul>";
+
+                            diseases_filter.forEach(item => {
+
+                                suggests += "<li><a>".concat(item).concat("</a></li>");
+                            })
+
+
+                            suggests += "</ul></div>"
+
+                            suggest_diseases_div.innerHTML = suggests;
+
+                            let suggestion = document.querySelector("#suggestions_diseases > div > ul > li ");
+
+                            suggestion.addEventListener('click', function() {
+
+                                input_disease.value = this.childNodes.item(0).textContent;
+
+                                suggest_diseases_div.innerHTML = "";
+
+                            })
+
+                        }
+                    }else {
+
+                        suggest_diseases_div.innerHTML = suggests;
+
+                    }
+
+
+                });
+
+
+
+
+
+
+
+                country_input.addEventListener('keyup', () => {
+
+                    let suggest = "";
+
+                    if(country_input.value !== "") {
+
+                        let pays_filter = pays.filter(item => item.includes(country_input.value));
+
+                        if(pays_filter.length > 0){
+
+                            suggest = "<div class='suggestions'> <ul>";
+
+                            pays_filter.forEach(item => {
+
+                                suggest += "<li><a>".concat(item).concat("</a></li>");
+                            })
+
+
+                             suggest += "</ul></div>"
+
+                             suggest_pays_div.innerHTML = suggest;
+
+                             let suggestion = document.querySelector("#suggestions_pays > div > ul > li ")
+
+                             suggestion.addEventListener('click', function() {
+
+                                  country_input.value = this.childNodes.item(0).textContent;
+
+                                  suggest_pays_div.innerHTML = "";
+
+                            })
+
+                        }
+                    }else {
+
+                        suggest_pays_div.innerHTML = suggest;
+
+                    }
+
+
+                });
+
+
+
+                region_input.addEventListener('keyup', function(){
+
+                    let suggests = "";
+
+                    if(region_input.value !==  "") {
+
+                        let region_filter = regions.filter(item => item.includes(region_input.value));
+
+                        if (region_filter.length > 0) {
+
+                            suggests = "<div class='suggestions'> <ul>";
+
+                            region_filter.forEach(item => {
+
+                                suggests += "<li><a>".concat(item).concat("</a></li>");
+                            })
+
+                            suggests += "</ul></div>"
+
+                            suggest_regions_div.innerHTML = suggests;
+
+                            let suggest = document.querySelector("#suggestions_regions > div > ul > li ")
+
+                            suggest.addEventListener('click', function () {
+
+                                region_input.value = this.childNodes.item(0).textContent;
+
+                                suggest_regions_div.innerHTML = "";
+
+                            });
+
+                        }
+
+                    }else {
+
+                        suggest_regions_div.innerHTML = "";
+
+                    }
+
+                });
+
+
+
+
+                function getData(){
+
+                    let url = "http://localhost:3000/entity/met/get_by_region_and_country?region=" + "&country=";
+                    let xml_request = new XMLHttpRequest();
+                    xml_request.open("GET",url,true);
+                    xml_request.send();
+                    xml_request.onreadystatechange = function () {
+
+                        if (this.readyState === 4 && this.status === 200) {
+
+                            metsByRegionAndPays = JSON.parse(this.responseText);
+                            pays =  Array.from(new Set(metsByRegionAndPays.mets.map(item => item.pays)));
+                            regions = Array.from(new Set(metsByRegionAndPays.mets.map(item => item.region)));
+
+                            url = "http://localhost:3000/entity/met/get_by_disease?disease=";
+                            xml_request.open("GET", url, true);
+                            xml_request.send();
+
+                            xml_request.onreadystatechange = function () {
+
+                                if (this.readyState === 4 && this.status === 200) {
+
+                                    metsByDiseases = JSON.parse(this.responseText);
+                                    diseases = metsByDiseases.mets.map(item => item.disease);
+
+                                }
+
+                              }
+
+                            }
+
+                           }
+
+                         }
+
+
+                         getData(); // Ici on par recuperer toute les données.
+
+
+
+                    function displayFoodTable() {
+
+                         if (met_by_region_pays_checkbox.checked) {
+
+                              met_by_disease_checkbox.checked = false;
+                              form_met_by_pays_region.hidden = false;
+
+                             }else {
+
+                                 div_content.innerHTML = " ";
+                                 form_met_by_pays_region.hidden = true;
+
+                           }
+
+                      }
+
+
+                      function displayDiseaseTable(){
+
+                          if (met_by_disease_checkbox.checked) {
+                              form_met_by_disease.hidden = false;
+                              met_by_region_pays_checkbox.checked = false
+
+                          }else {
+
+                              form_met_by_disease.hidden = true;
+                              div_content.innerHTML = " ";
+
+                          }
+                      }
+
+
+            </script>

@@ -4,6 +4,7 @@ module.exports = class Entity {
 
     //Commun à tout le monde
     uri = ""
+    image = ""
     label = "";
     comments = [];
     isClass = false;
@@ -29,6 +30,30 @@ module.exports = class Entity {
 
     setURI(uri){
         this.uri = uri;
+    }
+
+    
+    getImage(){
+        return this.image
+    }
+
+    getFacts(){
+        return this.facts;
+    }
+
+    setFacts(facts){
+        this.facts = facts;
+    }
+
+    
+    setImage(image_url){
+
+        if(image_url === " "){
+            this.image = "https://dummyimage.com/900x400/ced4da/6c757d.jpg";
+        }else{
+            this.image = image_url;
+        }
+
     }
 
 

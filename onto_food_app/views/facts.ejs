@@ -10,6 +10,40 @@
         </tr>
         </thead>
         <tbody>
+
+
+        <% entity.getFacts().forEach(fact => {%>
+
+            <tr>
+
+                <td>
+
+                    <%= fact.fact %> </small> </p>
+
+                </td>
+
+                <td>
+
+                    unknown
+
+                </td>
+
+                <td>
+
+                    Waiting...
+
+                </td>
+
+
+                <td>
+
+                    <button class="btn btn-success btn-sm"> validate</button>
+
+                </td>
+
+            </tr>
+
+        <%})%>
            
         </tbody>
 </table>

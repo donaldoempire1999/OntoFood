@@ -17,6 +17,9 @@
     "log4js": "^6.3.0",
     "morgan": "~1.9.1",
     "mustache": "^4.2.0",
+    "paginate": "^0.2.0",
+    "paginate-array": "^2.1.0",
+    "pagination-apis": "^1.0.8",
     "solr-node": "^1.2.1",
     "string-interpolation": "^1.2.5"
   }

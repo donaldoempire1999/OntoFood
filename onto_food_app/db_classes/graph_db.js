@@ -67,6 +67,60 @@ class GraphDBDao{
     }
 
 
+    getMetByRegionAndCounty(country , region){
+
+        let query = "select ?met ?region ?pays  where {?m onto:est_une_spécialiatié_du ?r; rdfs:label ?met; rdf:type onto:Met.\n" +
+            "    ?r rdfs:label ?region; onto:est_la_region_du_pays ?p.\n" +
+            "    ?p rdfs:label ?pays.\n" +
+            "    FILTER regex(?pays,'"+country+"', \"i\").\n" +
+            "    FILTER regex(?region,'"+region + "', \"i\").\n" +
+            "\n" +
+            "}\n" +
+            " "
+
+        console.log(query);
+
+        return new Promise((resolve , reject) => {
+
+            this.graphDBEndpoint.query(query).then(response => {
+
+                // ON retourne tout la requette pour chaque met , un pays et sa region d'orgine
+                resolve(response.records);
+
+            }).catch(err => reject(err))
+
+        })
+
+    };
+
+
+
+    getMetsByDisease(disease){
+
+        let query = "select ?met ?disease  where {?m onto:est_conseillé_pour ?d; rdfs:label ?met; rdf:type onto:Met.\n" +
+            "    ?d rdfs:label ?disease.\n" +
+            "    FILTER regex(?disease,'"+disease+"', \"i\").\n" +
+            "}\n" +
+            " "
+
+        console.log(query);
+
+        return new Promise((resolve , reject) => {
+
+            this.graphDBEndpoint.query(query).then(response => {
+
+                // ON retourne tout la requette pour chaque met , un pays et sa region d'orgine
+                resolve(response.records);
+
+            }).catch(err => reject(err))
+
+        })
+
+
+    }
+
+
+
     getAllCommentsAndLabelAboutUri(uri){
 
         return new Promise((resolve , reject) => {
@@ -125,7 +179,7 @@ class GraphDBDao{
 
         let query = "";
 
-        if (comment = true){
+        if (comment === true){
 
             p = "<".concat(EnapsoGraphDBClient.PREFIX_RDFS.iri.concat('comment')).concat(">");
 
@@ -146,7 +200,6 @@ class GraphDBDao{
 
 
     getURI(label){
-
 
         let query = "select distinct ?uri where {\n" +
             "    ?uri rdfs:label ?lb1.\n" +
@@ -174,7 +227,7 @@ class GraphDBDao{
     
     getAllInfoAboutEntity(label){
 
-        if(label.search('\'') != -1){label = escape(label)}
+        if(label.search('\'') !== -1){label = escape(label)}
       
 
         let query = "select ?lb1 ?p ?lb2  where {\n" +
@@ -247,7 +300,7 @@ class GraphDBDao{
 
      getCommentsAboutLabel(label){
 
-        if(label.search('\'') != -1){label = escape(label)}
+        if(label.search('\'') !== -1){label = escape(label)}
 
 
         let query = "select ?comment where {" +
@@ -258,7 +311,23 @@ class GraphDBDao{
 
       }
 
-      isClass(label,infos) {
+
+    getFactsAboutLabel(label){
+
+        if(label.search('\'') !== -1){label = escape(label)}
+
+
+        let query = "select ?fact where {" +
+            "?s rdfs:label '" +label + "';" +
+            "onto:a_pour_fait ?fact.}"
+
+        return this.graphDBEndpoint.query(query);
+
+    }
+
+
+
+    isClass(label,infos) {
 
         return infos.records.some(elm => elm.lb1 === label && elm.p === EnapsoGraphDBClient.PREFIX_RDFS.iri.concat('subClassOf'));
 
@@ -273,6 +342,22 @@ class GraphDBDao{
     }
 
 
+    getImageAboutLabel(label){
+
+        if(label.search('\'') !== -1){label = escape(label)}
+
+        console.log("-------- Récuperons maintenant son image----------");
+
+        let query = "select ?image_url where {" +
+            "?s rdfs:label ?label; onto:a_pour_image ?image_url." +
+            " filter(?label = '" + label+ "')}"
+
+            console.log(query);
+
+         return this.graphDBEndpoint.query(query);
+
+      }
+
 
      getAllAboutEntity(label) {
 
@@ -280,7 +365,7 @@ class GraphDBDao{
 
         return new Promise(function(resolve , reject){
 
-           let resulat = {uri: "",label: label , comments: "", infos: "", isClass: "",  types: "" };
+           let resulat = {uri: "",label: label , comments: "", infos: "", isClass: "",  types: "", image: "" , facts: ""};
 
            //Obtenir toutes les informations par rapport à l'entité et les autres
     
@@ -307,9 +392,13 @@ class GraphDBDao{
 
                 return myClass.getURI(label);
 
-            }).then(uri_res => {
+            }).catch(err => console.log(err))
+
+                .then(uri_res => {
 
                 console.log("Voici L'URI de notre ressource...");
+
+                console.log(uri_res);
 
                 let uri = uri_res.records[0].uri;
 
@@ -317,11 +406,44 @@ class GraphDBDao{
 
                 console.log(resulat.uri);
 
-                resolve(resulat);
+                return myClass.getImageAboutLabel(label);
 
             })
-            
-            .catch(function(err){
+                .then(image => {
+
+                console.log(image);
+
+                if(image.records.length > 0){
+
+                    resulat.image = image.records[0].image_url;
+
+                }else{
+                    resulat.image = " ";
+                }
+
+                return  myClass.getFactsAboutLabel(label);
+
+            }).then(facts => {
+
+                console.log("--------------------- VOICI LES FAITS --------------------")
+
+                console.log(facts);
+
+                 if(facts.records.length > 0){
+
+                     resulat.facts = facts.records;
+
+                 }else {
+
+                     resulat.facts = [];
+
+                 }
+
+                 resolve(resulat);
+
+
+            })
+                .catch(function(err){
 
                 console.log(err);
 

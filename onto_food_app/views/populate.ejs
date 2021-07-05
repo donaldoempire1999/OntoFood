@@ -14,9 +14,12 @@
 
                     <div class="text-muted fst-italic mb-2" style="margin-top: 10px;">
 
-                          <a class="badge bg-dark text-decoration-none link-light" href="#" > Add Class  </a>
+                          <a class="badge bg-dark text-decoration-none link-light" href="/entity/populate/class" > Add Class  </a>
 
-                          <a class="badge bg-dark text-decoration-none link-light" href="#" > Add Properties  </a>
+                          <a class="badge bg-dark text-decoration-none link-light" href="/entity/populate/properties" > Add Properties  </a>
+
+                          <a class="badge bg-dark text-decoration-none link-light" href="/entity/populate/individuals" > Add Individuals  </a>
+
                     </div>
                    
 
@@ -32,7 +35,6 @@
                                         <th>Classes</th>
                                         <th>About</th>
                                         <th>Individuals</th>
-                                        <th> Actions</th>
                                     </tr>
                                     </thead>
 
@@ -54,13 +56,7 @@
                                                 <span class="badge bg-dark text-white ms-1 rounded-pill"><%= classe.num_indi %></span>
 
                                                 </td>
-                                                   
-                                                <td> 
-                                                    <btn class="btn btn-sm btn-success">populate</btn>
 
-                                                </td>
-                                            
-                                            
                                             </tr>
 
                                         <%})%>
