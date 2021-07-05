@@ -351,8 +351,9 @@
                     if(region_input.value !==  "") {
 
                         let region_filter = regions.filter(item => item.includes(region_input.value));
+                        let pays_filter = pays.filter(item => item === country_input.value);
 
-                        if (region_filter.length > 0) {
+                        if (pays_filter.length > 0 && region_filter.length > 0)  {
 
                             suggests = "<div class='suggestions'> <ul>";
 
