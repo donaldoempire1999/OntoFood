@@ -28,13 +28,14 @@
                 <section class="mb-5">
 
 
-                            <table class="table  table-responsive table-hover colg-lg-12">
+                            <table style="overflow:auto;" class="table  table-responsive table-hover colg-lg-12">
 
                                 <thead class="thead-inverse" style="margin-top: 2px;">
                                     <tr>
                                         <th>Classes</th>
                                         <th>About</th>
                                         <th>Individuals</th>
+                                        <th>Details</th>
                                     </tr>
                                     </thead>
 
@@ -54,6 +55,11 @@
                                                 <td>
 
                                                 <span class="badge bg-dark text-white ms-1 rounded-pill"><%= classe.num_indi %></span>
+
+                                                </td>
+
+                                                <td>
+                                                    <a href="/entity/get/<%= classe.label%>"> <button class="btn btn-success btn-sm">view</button> </a>
 
                                                 </td>
 

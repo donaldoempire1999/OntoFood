@@ -89,11 +89,6 @@
   color: black;
 }
 
-.suggestions ul .selected
-{
-  background: navy;
-  color: white;
-}
 
 .suggestions .selected a
 {

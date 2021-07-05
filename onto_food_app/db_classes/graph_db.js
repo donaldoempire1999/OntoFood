@@ -280,6 +280,8 @@ class GraphDBDao{
                 "?s rdf:type owl:DatatypeProperty."+
              "}"
 
+            console.log(EnapsoGraphDBClient);
+
              this.graphDBEndpoint.query(query).then(response => {
 
                 let properties = response.records.map(row => row.s);

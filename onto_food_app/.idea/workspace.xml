@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a81367bf-f720-4412-812c-09a8c900b091" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/recom.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/recom.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_classes/access.js" beforeDir="false" afterPath="$PROJECT_DIR$/db_classes/access.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_classes/graph_db.js" beforeDir="false" afterPath="$PROJECT_DIR$/db_classes/graph_db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/crud.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/crud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/populate.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/populate.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/populate_class.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/populate_class.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/search_result.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/search_result.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +74,7 @@
       <workItem from="1625035583485" duration="15436000" />
       <workItem from="1625056033914" duration="37000" />
       <workItem from="1625056073089" duration="30635000" />
-      <workItem from="1625319560187" duration="99012000" />
+      <workItem from="1625319560187" duration="124336000" />
     </task>
     <servers />
   </component>
@@ -107,6 +113,10 @@
       <screen x="0" y="27" width="1920" height="995" />
     </state>
     <state x="350" y="144" width="1022" height="737" key="SettingsEditor/0.27.1920.995@0.27.1920.995" timestamp="1625429252315" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1625492915067">
+      <screen x="0" y="27" width="1920" height="995" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.27.1920.995@0.27.1920.995" timestamp="1625492915067" />
     <state x="100" y="127" width="1720" height="795" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1625042220342">
       <screen x="0" y="27" width="1920" height="995" />
     </state>

@@ -1,1 +1,254 @@
-%>
+<%- include('./header')%>
+
+<!-- Page content-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Post content-->
+            <article class="row">
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-0" style="margin-bottom: 45px"> Populate</h1>
+                </header>
+
+
+
+            </article>
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-sm btn-success" onclick="addRow()"> add row</button>
+    <button type="button" class="btn btn-sm btn-danger"> populate </button>
+
+
+
+    <section class="mb-10 col-lg-12" style="margin-top: 20px;">
+
+        <table class="table " id="table_relation">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Predicate</th>
+                <th scope="col">Object</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+
+
+
+    </section>
+
+
+</div>
+
+
+
+<script>
+
+    let entities = [];
+    let properties = []
+    let data = [];
+    let table_relation = document.getElementById("table_relation");
+    let tbody = table_relation.getElementsByTagName("tbody")[0];
+
+    function getData(){
+
+        let url = "http://localhost:3000/entity/get/all/properties";
+        let xml_request = new XMLHttpRequest();
+        xml_request.open("GET",url,true);
+        xml_request.send();
+        xml_request.onreadystatechange = function () {
+
+            if (this.readyState === 4 && this.status === 200) {
+
+                 data = JSON.parse(this.responseText);
+                 entities = data.properties.entities;
+                 properties =  properties.concat(data.properties.data_properties).concat(data.properties.object_properties).concat( data.properties.others)
+                 properties = Array.from(new Set(properties));
+
+             }
+
+
+        }
+
+    }
+
+
+
+    function addRow(){
+         let num;
+         if(tbody.rows.length === 0){
+             num = 0
+         }else {
+             num = tbody.lastElementChild.firstElementChild.textContent;
+         }
+
+        let tr = tbody.insertRow(-1);
+
+        for (let i = 0; i < 4; i++){
+
+            if (i === 0){
+                let th = document.createElement("th");
+                th.scope = "row"
+                th.textContent = (parseInt(num) + 1).toString()
+                tr.appendChild(th);
+            }else {
+
+                let td = document.createElement("td")
+                let input = document.createElement("input");
+                input.type = "text";
+                input.className = "form-control"
+                td.appendChild(input);
+
+                if (i > 1 ) {
+
+                    let suggestion_div = document.createElement("div");
+                    suggestion_div.className = "suggestions";
+                    suggestion_div.hidden = true;
+                    td.append(suggestion_div);
+                    let _this = input;
+
+                    if(i < 3){
+
+                        input.addEventListener('keyup', function (e){
+
+                            handleSuggestions(suggestion_div, _this);
+
+                        });
+
+                    }else {
+
+
+                        input.addEventListener('keyup', function (e){
+
+                             handleSuggestionsEntity(suggestion_div, _this);
+
+                        });
+
+                    }
+
+
+                }
+                tr.append(td);
+
+            }
+
+        }
+
+    }
+
+
+    // Ici on par recuperer toute les données.
+    getData();
+
+         function handleSuggestions(suggestions_div, input){
+
+             let suggests = "";
+
+                if(input.value !== "") {
+
+                    let properties_filter = properties.filter(item => item.includes(input.value));
+
+                    if(properties_filter.length > 0){
+
+                        suggestions_div.hidden = false;
+
+                        suggests = "<ul>";
+
+                        properties_filter.forEach(item => {
+
+                            suggests += "<li><a>".concat(item).concat("</a></li>");
+                        });
+
+                        suggests += "</ul>"
+
+                        suggestions_div.innerHTML = suggests;
+
+                        suggestions_div.childNodes.item(0).childNodes.forEach(function(li){
+
+                            li.childNodes.item(0).addEventListener('click', function() {
+
+                                input.value = li.childNodes.item(0).textContent;
+
+                                suggestions_div.hidden = true;
+
+                            })
+
+
+                        });
+
+                    }
+        }else {
+
+            suggestions_div.innerHTML = suggests;
+            suggestions_div.hidden = true;
+
+        }
+
+
+    };
+
+
+    function handleSuggestionsEntity(suggestions_div, input){
+
+        let suggests = "";
+
+        if(input.value !== "") {
+
+            let entities_filter = entities.filter(item => item.includes(input.value));
+
+            if(entities_filter.length > 0){
+
+                suggestions_div.hidden = false;
+
+                suggests = "<ul>";
+
+                entities_filter.forEach(item => {
+
+                    suggests += "<li><a>".concat(item).concat("</a></li>");
+                });
+
+                suggests += "</ul>"
+
+                suggestions_div.innerHTML = suggests;
+
+                suggestions_div.childNodes.item(0).childNodes.forEach(function(li){
+
+                    li.childNodes.item(0).addEventListener('click', function() {
+
+                        input.value = li.childNodes.item(0).textContent;
+
+                        suggestions_div.hidden = true;
+
+                    })
+
+
+                });
+
+            }
+        }else {
+
+            suggestions_div.innerHTML = suggests;
+            suggestions_div.hidden = true;
+
+        }
+
+
+    };
+
+
+
+
+
+
+
+
+
+</script>

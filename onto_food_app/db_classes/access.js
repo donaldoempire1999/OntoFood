@@ -17,6 +17,35 @@ module.exports = class Access{
     }
 
 
+    static getAllProperties(){
+
+        return new Promise((resolve, reject) => {
+
+            let properties = {others: ['rdfs:label','rdfs:comment','rdfs:subClassOf',' rdfs:isDefinedBy',' rdfs:seeAlso']};
+
+            this.gb.getAllDataProperties().then(res => {
+
+                console.log(res);
+
+                properties['data_properties'] = res
+
+                return this.gb.getAllObjectProperties();
+
+            }).then(res => {
+
+                console.log(res);
+
+                properties['object_properties'] = res
+
+                resolve (properties);
+
+
+            }).catch(err => reject(err));
+
+        });
+    }
+
+
 
     static getMetByRegionAndCountry(country , region ) {
 

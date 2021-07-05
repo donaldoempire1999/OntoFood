@@ -81,6 +81,27 @@ crud_router.get('/populate/class', (req , res) => {
 });
 
 
+crud_router.get('/get/all/properties', (req , res) => {
+
+    let properties = [];
+
+    Access.getAllProperties().then(prop => {
+
+        properties = prop;
+
+        return Access.getEntityByLabel("Thing");
+
+    }).then(entity => {
+
+        properties['entities'] = entity.views[0].data;
+
+        res.json({properties: properties});
+
+    })
+
+});
+
+
 
 
 crud_router.get('/met/get_by_region_and_country',(req , res) => {
