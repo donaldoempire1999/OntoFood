@@ -2,7 +2,7 @@ OntoFood est une application web de gestion culinaire et nutritive dotée d'un m
 
 onto_spec: Contient tout ce qui concerne les spécifications de l'application , diagrammes de classes , architecture etc..
 
-onto_food_ontology: contient la description semantique de notre projet (ontoFood.jsonld ) qu'il faudra importer dans graphDb après installation de celui çi et query-result qui est le fichier à indexer dans Apache Solr.  
+onto_food_ontology: contient la description semantique de notre projet (onto_food.jsonld ) qu'il faudra importer dans graphDb après installation de celui çi et query-result qui est le fichier à indexer dans Apache Solr.  
 
 onto-food-app: Ici c'est le code de l'application fait en node JS avec Ejs comme moteur template.
 
