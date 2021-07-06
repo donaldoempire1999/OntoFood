@@ -1,10 +1,10 @@
-Le but ici est de construire une application avec un moteur ontologique permettant de faire de la recommandation nutritive et la recherche des mets. Il est aussi doté d'un moteur de recherche textuel et d'un interface de population.
+OntoFood est une application web de gestion culinaire et nutritive dotée d'un moteur ontologique permettant de faire de la recommandation nutritive et la recherche des mets. Il est aussi doté d'un moteur de recherche textuel et d'un interface de population.
 
 onto_spec: Contient tout ce qui concerne les spécifications de l'application , diagrammes de classes , architecture etc..
 
-onto_food_ontology: contient la description owl de notre projet (ONTOFOOD)
+onto_food_ontology: contient la description semantique de notre projet (ontoFood.jsonld ) qu'il faudra importer dans graphDb après installation de celui çi et query-result qui est le fichier à indexer dans Apache Solr.  
 
-onto-food-app: Ici c'est l'application, Fais en node JS avec Ejs comme moteur template.
+onto-food-app: Ici c'est le code de l'application fait en node JS avec Ejs comme moteur template.
 
 -node_version: 14.04
 
