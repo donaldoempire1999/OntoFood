@@ -164,12 +164,16 @@ class GraphDBDao{
 
 
 
+    insertriple(triples){
 
 
+        let query = 'insert data { {'+ triples+ '}' + '}'
 
+        console.log(query);
 
+        return this.graphDBEndpoint.update(query)
 
-
+    }
 
 
 

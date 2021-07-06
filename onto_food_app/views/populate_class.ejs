@@ -72,13 +72,29 @@
         xml_request.open("GET",url,true);
         xml_request.send();
         xml_request.onreadystatechange = function () {
-
             if (this.readyState === 4 && this.status === 200) {
 
                  data = JSON.parse(this.responseText);
                  entities = data.entities;
              }
+        }
+    }
 
+
+    function insertTriples(triples){
+
+        triples = encodeURI(triples);
+
+        let url = "http://localhost:3000/entity/insert_triples/?triples="+triples;
+        let xml_request = new XMLHttpRequest();
+        xml_request.open("GET",url,true);
+        xml_request.send();
+        xml_request.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+
+                console.log( JSON.parse(this.responseText))
+
+            }
         }
 
     }
@@ -194,17 +210,54 @@
 
     function getAllDataRowTable(){
 
-        let data = [];
+        let triples = [];
 
-        tbody.childNodes.forEach(tr => {
+        let n = tbody.rows.length;
 
-            tr.childNodes.forEach(td => {
+        for (let i = 0 ; i <n ; i++ ){
 
-                alert(td.value);
+            let tr = tbody.children.item(i);
 
-            })
+            let triple = {
+                s: "",
+                p: "",
+                o: ""
+            };
+
+            for (let k = 1; k < 4 ; k++){
+
+                if(k === 1){
+
+                    triple.s =  tr.childNodes.item(k).firstChild.value.toString();
+
+                }
+
+                if(k === 2){
+
+                    triple.p =  tr.childNodes.item(k).firstChild.value.toString();
+
+                }
+
+                if(k === 3){
+
+                    triple.o =  tr.childNodes.item(k).firstChild.value.toString();
+
+                }
+            }
+
+            triples.push(triple);
+
+        }
+
+        let triples_concat = "";
+
+        triples.forEach(triple => {
+
+            triples_concat += triple.s + " " + triple.p + " " + triple.o + "." + "\n";
 
         })
+
+        insertTriples(triples_concat);
 
     }
 

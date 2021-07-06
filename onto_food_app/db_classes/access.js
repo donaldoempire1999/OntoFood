@@ -17,6 +17,13 @@ module.exports = class Access{
     }
 
 
+
+    static insertTriples(triples){
+
+        return this.gb.insertriple(triples);
+    }
+
+
     static getAllProperties(){
 
         return new Promise((resolve, reject) => {

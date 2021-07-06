@@ -123,5 +123,31 @@ crud_router.get('/met/get_by_disease',(req , res) => {
 
 
 
+crud_router.get('/insert_triples', (req, res) => {
+
+    const triples = req.query.triples.toString();
+
+    console.log(triples);
+
+     Access.insertTriples(triples).then(res => {
+
+         res.json(
+
+             {
+                 result: "SuccessFull Insert",
+                 status: "OK"
+             }
+         )
+
+     }).catch(err => {
+
+         res.json({error: err})
+
+     })
+
+});
+
+
+
 
 module.exports = crud_router;
