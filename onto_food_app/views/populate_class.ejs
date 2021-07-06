@@ -1,5 +1,58 @@
 <%- include('./header')%>
 
+
+<style>
+.suggestions {
+display: block;
+width: 100%;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+-moz-appearance: none;
+appearance: none;
+border-radius: 0.25rem;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.suggestions ul {
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.suggestions ul:hover
+{
+background: lightgray;
+color: white;
+}
+
+.suggestions a
+{
+text-decoration: none;
+color: navy;
+color: black;
+}
+
+
+.suggestions .selected a
+{
+color: white;
+}
+
+#autosuggest
+{
+display: none;
+}
+
+</style>
+
+
 <!-- Page content-->
 <div class="container mt-5">
     <div class="row">

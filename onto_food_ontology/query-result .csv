@@ -1264,6 +1264,8 @@ http://www.ontoFood.fr/bongolo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_
 http://www.ontoFood.fr/bongolo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/bongolo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/bongolo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/bongolo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/bongolo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/béribéri,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/béribéri,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/béribéri,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1510,8 +1512,8 @@ http://www.ontoFood.fr/crème,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:
 http://www.ontoFood.fr/dizangué,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/dizangué,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/dizangué,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
-http://www.ontoFood.fr/dizangué,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/dizangué,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/dizangué,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1525,6 +1527,8 @@ http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_
 http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/djansan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/donald,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/donald,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/donald,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1581,6 +1585,8 @@ http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/1999/02/22-rdf-syntax-ns
 http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kwashokor,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/kwashokor,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/kwashokor,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1628,6 +1634,8 @@ http://www.ontoFood.fr/foléré,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,
 http://www.ontoFood.fr/foléré,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/foléré,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/foléré,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/foléré,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/foléré,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/fromage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/fromage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/fromage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1661,6 +1669,8 @@ http://www.ontoFood.fr/fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:no
 http://www.ontoFood.fr/fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node176
 http://www.ontoFood.fr/fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/manioc,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/manioc,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/manioc,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1805,6 +1815,8 @@ http://www.ontoFood.fr/igname,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:
 http://www.ontoFood.fr/igname,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/igname,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/igname,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/igname,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/igname,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1818,6 +1830,8 @@ http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,ht
 http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jinger,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1831,6 +1845,8 @@ http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1844,6 +1860,8 @@ http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax
 http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jus_de_cassimango,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1857,6 +1875,8 @@ http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-n
 http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/jus_de_corossol,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1870,6 +1890,8 @@ http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:
 http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kankan,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1883,11 +1905,13 @@ http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:no
 http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kodi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kossam,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/kossam,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/kossam,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
-http://www.ontoFood.fr/kossam,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kossam,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kossam,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1901,6 +1925,8 @@ http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#typ
 http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kotimandjo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1921,6 +1947,8 @@ http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#typ
 http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node176
 http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/kouakoukou,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1935,6 +1963,8 @@ http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:
 http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/macabo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/macabo_bouillie,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/macabo_bouillie,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/macabo_bouillie,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -1992,6 +2022,8 @@ http://www.ontoFood.fr/patate_douce,http://www.w3.org/1999/02/22-rdf-syntax-ns#t
 http://www.ontoFood.fr/patate_douce,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/patate_douce,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/patate_douce,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/patate_douce,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/patate_douce,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/phosphore,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/phosphore,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/phosphore,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2047,6 +2079,8 @@ http://www.ontoFood.fr/piment,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:
 http://www.ontoFood.fr/piment,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/piment,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/piment,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/piment,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/piment,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/poivre_blanc,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/poivre_blanc,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/poivre_blanc,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2089,6 +2123,8 @@ http://www.ontoFood.fr/pèbè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:
 http://www.ontoFood.fr/pèbè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/pèbè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/pèbè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/pèbè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/pèbè,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/sauce_arachides_grillées,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/sauce_arachides_grillées,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/sauce_arachides_grillées,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2185,6 +2221,7 @@ http://www.ontoFood.fr/sauce_carottes,http://www.w3.org/1999/02/22-rdf-syntax-ns
 http://www.ontoFood.fr/sauce_carottes,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/sauce_carottes,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node176
 http://www.ontoFood.fr/sauce_carottes,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/sauce_eru,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Class
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2247,6 +2284,8 @@ http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/1999/02/22-rdf-s
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node187
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node189
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node191
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2271,6 +2310,8 @@ http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#t
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node176
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/viande_de_boeuf,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/viande_de_boeuf,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/viande_de_boeuf,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2447,6 +2488,8 @@ http://www.ontoFood.fr/sauce_verte,http://www.w3.org/1999/02/22-rdf-syntax-ns#ty
 http://www.ontoFood.fr/sauce_verte,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
 http://www.ontoFood.fr/sauce_verte,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node176
 http://www.ontoFood.fr/sauce_verte,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/sauce_verte,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/sauce_verte,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 http://www.ontoFood.fr/sel_gemme,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 http://www.ontoFood.fr/sel_gemme,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/sel_gemme,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
@@ -2525,6 +2568,8 @@ http://www.ontoFood.fr/ndo'o,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:n
 http://www.ontoFood.fr/ndo'o,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
 http://www.ontoFood.fr/ndo'o,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
 http://www.ontoFood.fr/ndo'o,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/ndo'o,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
+http://www.ontoFood.fr/ndo'o,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
 _:node73,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 _:node73,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 _:node73,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#AllDisjointClasses
@@ -3107,6 +3152,54 @@ _:node257,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/1999
 _:node258,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
 _:node258,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
 _:node258,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+http://www.w3.org/2000/01/rdf-schema#Label,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+http://www.w3.org/2000/01/rdf-schema#Label,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.w3.org/2000/01/rdf-schema#Label,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/a_pour_fait,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.ontoFood.fr/a_pour_fait,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/grabage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.ontoFood.fr/grabage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/grabage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.ontoFood.fr/Region
+http://www.ontoFood.fr/grabage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node9
+http://www.ontoFood.fr/grabage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node1
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.ontoFood.fr/Met
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node9
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node20
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node30
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node35
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node43
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node51
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.ontoFood.fr/MetAvecComplement
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node62
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node64
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node66
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node126
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node155
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node160
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node168
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node176
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node187
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node189
+http://www.ontoFood.fr/koki,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node191
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.ontoFood.fr/Aliment
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node5
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node9
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node20
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node57
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node130
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node134
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node145
+http://www.ontoFood.fr/ff,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,_:node182
 http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2000/01/rdf-schema#subPropertyOf
 http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2000/01/rdf-schema#subClassOf
@@ -3184,6 +3277,8 @@ http://www.ontoFood.fr/a_pour_val_kcal,http://www.w3.org/2000/01/rdf-schema#subP
 http://www.ontoFood.fr/a_pour_val_kcal,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.ontoFood.fr/a_pour_val_kcal
 http://www.ontoFood.fr/a_pour_image,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2002/07/owl#topDataProperty
 http://www.ontoFood.fr/a_pour_image,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.ontoFood.fr/a_pour_image
+http://www.w3.org/2000/01/rdf-schema#Label,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2000/01/rdf-schema#Label
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2002/07/owl#topObjectProperty
 http://www.w3.org/2002/07/owl#SymmetricProperty,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
 http://www.w3.org/2002/07/owl#SymmetricProperty,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2002/07/owl#ObjectProperty
 http://www.w3.org/2002/07/owl#TransitiveProperty,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
@@ -4423,13 +4518,15 @@ http://www.ontoFood.fr/a_pour_metier,http://www.w3.org/2000/01/rdf-schema#domain
 http://www.ontoFood.fr/a_pour_metier,http://www.w3.org/2000/01/rdf-schema#domain,http://www.ontoFood.fr/Participant
 http://www.ontoFood.fr/a_pour_nom_conv,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/a_pour_nom_tradi,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2002/07/owl#Thing
-http://www.ontoFood.fr/a_pour_nom_tradi,http://www.w3.org/2000/01/rdf-schema#domain,_:node57
 http://www.ontoFood.fr/a_pour_nom_tradi,http://www.w3.org/2000/01/rdf-schema#domain,_:node182
+http://www.ontoFood.fr/a_pour_nom_tradi,http://www.w3.org/2000/01/rdf-schema#domain,_:node57
 http://www.ontoFood.fr/a_pour_pseudo,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/a_pour_pseudo,http://www.w3.org/2000/01/rdf-schema#domain,http://www.ontoFood.fr/Participant
 http://www.ontoFood.fr/a_pour_val_kcal,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2002/07/owl#Thing
 http://www.ontoFood.fr/a_pour_val_kcal,http://www.w3.org/2000/01/rdf-schema#domain,http://www.ontoFood.fr/Nutriment
 http://www.ontoFood.fr/a_pour_image,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/2000/01/rdf-schema#domain,http://www.ontoFood.fr/sauce_eru
 http://www.w3.org/2000/01/rdf-schema#subPropertyOf,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
 http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2000/01/rdf-schema#Class
 http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2000/01/rdf-schema#Class
@@ -4585,6 +4682,8 @@ http://www.ontoFood.fr/a_pour_val_kcal,http://www.w3.org/2000/01/rdf-schema#rang
 http://www.ontoFood.fr/a_pour_val_kcal,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2001/XMLSchema#float
 http://www.ontoFood.fr/a_pour_image,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2000/01/rdf-schema#Literal
 http://www.ontoFood.fr/a_pour_image,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2001/XMLSchema#string
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2002/07/owl#Thing
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/2000/01/rdf-schema#range,http://www.ontoFood.fr/Nutriment
 http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#sameAs,http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,http://www.w3.org/2002/07/owl#sameAs,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
 http://www.w3.org/2000/01/rdf-schema#Class,http://www.w3.org/2002/07/owl#sameAs,http://www.w3.org/2000/01/rdf-schema#Class
@@ -5183,6 +5282,12 @@ _:node255,http://www.w3.org/2002/07/owl#sameAs,_:node255
 _:node256,http://www.w3.org/2002/07/owl#sameAs,_:node256
 _:node257,http://www.w3.org/2002/07/owl#sameAs,_:node257
 _:node258,http://www.w3.org/2002/07/owl#sameAs,_:node258
+http://www.w3.org/2000/01/rdf-schema#Label,http://www.w3.org/2002/07/owl#sameAs,http://www.w3.org/2000/01/rdf-schema#Label
+http://www.ontoFood.fr/a_pour_fait,http://www.w3.org/2002/07/owl#sameAs,http://www.ontoFood.fr/a_pour_fait
+http://www.ontoFood.fr/grabage,http://www.w3.org/2002/07/owl#sameAs,http://www.ontoFood.fr/grabage
+http://www.ontoFood.fr/koki,http://www.w3.org/2002/07/owl#sameAs,http://www.ontoFood.fr/koki
+http://www.ontoFood.fr/se_nourrit_avec,http://www.w3.org/2002/07/owl#sameAs,http://www.ontoFood.fr/se_nourrit_avec
+http://www.ontoFood.fr/ff,http://www.w3.org/2002/07/owl#sameAs,http://www.ontoFood.fr/ff
 http://www.w3.org/2002/07/owl#bottomDataProperty,http://www.w3.org/2002/07/owl#equivalentProperty,http://www.w3.org/2002/07/owl#bottomDataProperty
 http://www.w3.org/2002/07/owl#bottomObjectProperty,http://www.w3.org/2002/07/owl#equivalentProperty,http://www.w3.org/2002/07/owl#bottomObjectProperty
 http://www.w3.org/2002/07/owl#topDataProperty,http://www.w3.org/2002/07/owl#equivalentProperty,http://www.w3.org/2002/07/owl#topDataProperty
@@ -6067,13 +6172,17 @@ _:node255,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,_:node256
 _:node256,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,_:node257
 _:node257,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,_:node258
 _:node258,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+http://www.ontoFood.fr/,http://www.w3.org/2000/01/rdf-schema#comment,OntoFood est une application de gestion des menu culinaires et de recommandations nutritives. basée sur une ontologie de domaine.
 http://www.ontoFood.fr/a_pour_epice,http://www.w3.org/2000/01/rdf-schema#comment,"une sauce ou un complément ou un met sans complement a pour épice Une épice
 
 Le choix de MetSansComplement dans le domaine car avec lui on entre directement dans le préparation et comme cette propriété hérite de _se_prepare_avec alors il héritéra aussi de ça."
 http://www.ontoFood.fr/se_prepare_avec,http://www.w3.org/2000/01/rdf-schema#comment,"une sauce ou un complement se prépare avec des aliments
 
 Dans le cas d'un met sans complément on entre aussi dans la préparation car il n'est pas composé de sauce et complément."
+http://www.ontoFood.fr/Epice,http://www.w3.org/2000/01/rdf-schema#comment,"Une épice est une matière organique d'origine végétale odorante ou piquante. Elle est principalement utilisée en petite quantité en cuisine, comme conservateur, assaisonnement ou colorant, mais aussi en médecine, en teinturerie ou en distillerie. La notion d'épice se confond partiellement avec celle d'aromate, et dans une moindre mesure de condiment."
 http://www.ontoFood.fr/est_la_region_du_pays,http://www.w3.org/2000/01/rdf-schema#comment,Chaque region provient d'un pays
+http://www.ontoFood.fr/Pays,http://www.w3.org/2000/01/rdf-schema#comment,La grande Classe des pays.
+http://www.ontoFood.fr/Region,http://www.w3.org/2000/01/rdf-schema#comment,"une zone géographique relativement étendue d'un pays (Île-de-France par exemple) ou d'un continent (Europe de l'Est par exemple). une subdivision territoriale, correspondant à un niveau de division administrative, sans nécessaire cohérence d'un pays à l'autre."
 http://www.ontoFood.fr/est_composé_de,http://www.w3.org/2000/01/rdf-schema#comment,"Un met avec complément est constitué de sauce et d'un complément
 
 Un met sans complément est composé uniquemet d'aliments"
@@ -6085,25 +6194,49 @@ http://www.ontoFood.fr/est_conseillé_pour,http://www.w3.org/2000/01/rdf-schema#
 http://www.ontoFood.fr/Boisson,http://www.w3.org/2000/01/rdf-schema#comment,"Les boissons, ont distingue plusieurs boissons."
 http://www.ontoFood.fr/Maladie,http://www.w3.org/2000/01/rdf-schema#comment,"On distingue plusieurs sortes de maladies , les maladies nutritives (Kwasokor ,Beriberi) ou des maladies anoboliques: Diabète."
 http://www.ontoFood.fr/est_constitué_de,http://www.w3.org/2000/01/rdf-schema#comment,"Une sauce , un complément est constitué d'un ou plusieurs aliments (qui à leur tour sont consitués de plusieurs nutriments) , si on connait la composition de chaque sauce ou complement alors on peut retourver la composition de chaque mets"
+http://www.ontoFood.fr/Nutriment,http://www.w3.org/2000/01/rdf-schema#comment,Un nutriment est une substance fournie par l'alimentation et utilisée par l'organisme pour sa construction et son fonctionnement. Les nutriments lui fournissent l'énergie et le matériel dont il a besoin pour couvrir les dépenses et assurer le renouvellement cellulaire.
 http://www.ontoFood.fr/est_une_spécialiatié_du,http://www.w3.org/2000/01/rdf-schema#comment,Une sauce est une spécialité d'une region et par inference on peut retrouver les spécialités du met.
+http://www.ontoFood.fr/Poisson,http://www.w3.org/2000/01/rdf-schema#comment,"Le terme « poisson » est plus précisément employé pour désigner les crâniates non tétrapodes, c'est-à-dire des animaux avec un crâne cartilagineux ou osseux qui protège la partie antérieure du système nerveux, possédant des branchies toute leur vie et qui peuvent posséder des nageoires, mais pas de « pattes »8. Les poissons ne forment pas un groupe phylogénétiquement homogène, à l'inverse des oiseaux ou des mammifères (voir plus bas)."
 http://www.ontoFood.fr/Participant,http://www.w3.org/2000/01/rdf-schema#comment,"Notre base de connaissance est publique et ouverte à tous , vous n'êtes pas obliger de vous auhentifier ou de donner vos coordonnées"
 http://www.ontoFood.fr/Bièrre,http://www.w3.org/2000/01/rdf-schema#comment,Bièrre
+http://www.ontoFood.fr/CousCous,http://www.w3.org/2000/01/rdf-schema#comment,"On distingue plusieurs sortes de couscous , Africains,Asiatiques, le couscous fait partie des plats les plus cuisinés au monde et chaque culture a sa manière de concevoir et de cuisiner ce met."
 http://www.ontoFood.fr/Feculent,http://www.w3.org/2000/01/rdf-schema#comment,"Les féculents sont des aliments d'origine végétale, constitués dans une forte proportion d'amidon ou plus généralement de glucides complexes. Il peut s'agir de parties de plantes non transformées (graines, fruits, tubercules, racines, tiges) ou de produits dérivés de l'industrie agro-alimentaire (farine, fécule, pâtes alimentaires...)."
+http://www.ontoFood.fr/Feculent,http://www.w3.org/2000/01/rdf-schema#comment,"Les feculents font partie aliments le plus consommés, ils entrent aussi dans la cuisson de certains couscous, comme le fufu."
+http://www.ontoFood.fr/Feculent,http://www.w3.org/2000/01/rdf-schema#comment,Les feculents sont xxxxx.
 http://www.ontoFood.fr/Fruit,http://www.w3.org/2000/01/rdf-schema#comment,"Un fruit peut aussi être  un féculent , c'est le cas de la banane par exemple"
 http://www.ontoFood.fr/Legume,http://www.w3.org/2000/01/rdf-schema#comment,Certains légumes peuvent aussi être des féculents
 http://www.ontoFood.fr/MetAvecComplement,http://www.w3.org/2000/01/rdf-schema#comment,"Ces mets se mangent generalement avec des sauce accompagnés de couscous ou patates ou etc.. , Il est vraiment agréable."
+http://www.ontoFood.fr/SauceLegumes,http://www.w3.org/2000/01/rdf-schema#comment,La grande classe des sauces legumes. 
+http://www.ontoFood.fr/SauceLegumes,http://www.w3.org/2000/01/rdf-schema#comment,Elle contient les sauces Legumes Feuilles et Fruits.
+http://www.ontoFood.fr/Tubercule,http://www.w3.org/2000/01/rdf-schema#comment,"La grande Classe des tubercules. Pouvant contenir plusieurs tubercules , notament , Manioc , macabo ,patate douce etc... "
 http://www.ontoFood.fr/Vin,http://www.w3.org/2000/01/rdf-schema#comment,Vin
 http://www.ontoFood.fr/Whisky,http://www.w3.org/2000/01/rdf-schema#comment,Whisky
 http://www.ontoFood.fr/banane,http://www.w3.org/2000/01/rdf-schema#comment,La banane est fruit qui fait partie de la classe des féculents
 http://www.ontoFood.fr/banne_malaxée,http://www.w3.org/2000/01/rdf-schema#comment,"Banane Malaxée , spécialité de l'Ouest Cameroun, est un plat très populaire. D'ailleurs il a eu à s'exporter dans plusieurs autres regions, et prend notament plusiseurs formes, en fonction des ingredients et des goûts."
+http://www.ontoFood.fr/blé,http://www.w3.org/2000/01/rdf-schema#comment,"Le blé est très riche , et a une très grande valeur nutritive."
+http://www.ontoFood.fr/blé,http://www.w3.org/2000/01/rdf-schema#comment,Le blé faisant partie de la famille des féculents est très riche en amidon.
+http://www.ontoFood.fr/cameroun,http://www.w3.org/2000/01/rdf-schema#comment,"Le Cameroun (/ka.mə.ʁun/ ou /kam.ʁun/), en forme longue la république du Cameroun (en anglais : Cameroon et Republic of Cameroon), est un pays d'Afrique centrale, situé entre le Nigéria au nord-nord-ouest, le Tchad au nord-nord-est, la République centrafricaine à l'est, la république du Congo au sud-est, le Gabon au sud, la Guinée équatoriale au sud-ouest et le golfe de Guinée au sud-ouest. Les langues officielles sont le français et l'anglais pour un pays qui compte une multitude de langues locales. "
+http://www.ontoFood.fr/littoral_cmr,http://www.w3.org/2000/01/rdf-schema#comment,Region du Cameroun.
+http://www.ontoFood.fr/nord_ouest_cmr,http://www.w3.org/2000/01/rdf-schema#comment,Region du Cameroun.
+http://www.ontoFood.fr/ouest_cmr,http://www.w3.org/2000/01/rdf-schema#comment,Region du Cameroun.
 http://www.ontoFood.fr/couscous_mais,http://www.w3.org/2000/01/rdf-schema#comment,"Le traditionnel couscous mais, c'est un complément typiquement africain, il se mange dans de nombreux pays."
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.w3.org/2000/01/rdf-schema#comment,"Couscous Mais sauce ndolè, spécialité du littoral Cameroun , notamment à travers leur fameux leur sauce (sauce ndolè) qui est un plat Mondialement reconnu."
-http://www.ontoFood.fr/riz,http://www.w3.org/2000/01/rdf-schema#comment,"Le riz est un céréeale largement d""gusté dans le monde , il entre dans la preparation de plusieurs type de riz, qui varient en fonction des regions."
+http://www.ontoFood.fr/sauce_ndolè,http://www.w3.org/2000/01/rdf-schema#comment,"La célèbre Sauce Ndolè , cette sauce mondialement reconnue et propre à la region du Littora au Cameroun. Elle est très appréciée dans le monde. "
+http://www.ontoFood.fr/sauce_ndolè,http://www.w3.org/2000/01/rdf-schema#comment,La sauce ndolè prime  l'honneur et le respect chez les sawa.
+http://www.ontoFood.fr/couscous_mil,http://www.w3.org/2000/01/rdf-schema#comment,C'est un couscous fait à base de mil et d'eau.
+http://www.ontoFood.fr/riz,http://www.w3.org/2000/01/rdf-schema#comment,"Le riz est un céréeale largement degusté dans le monde , il entre dans la preparation de plusieurs type de riz, qui varient en fonction des regions."
 http://www.ontoFood.fr/dizangué,http://www.w3.org/2000/01/rdf-schema#comment,C'est une huile issu de Nord-Ouest
+http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/2000/01/rdf-schema#comment,"Les feuilles de Ndolè peuvent être généralement amer. Un lessivage au prealable peut s'averer important. Ils sont riches en Protides et Zinc et entre dans la cuisson de la célèbre Sauce Ndolè, une sauce Locale à la region du Littoral."
+http://www.ontoFood.fr/kwashokor,http://www.w3.org/2000/01/rdf-schema#comment,"Malnutrition due à une quantité très insuffisante de protéines dans l'alimentation. La malnutrition protéino-énergétique (ou kwashiorkor) apparaît principalement chez les personnes vivant dans des zones géographiques où les ressources alimentaires sont limitées. Elle touche le plus souvent les enfants ayant un régime alimentaire faible en protéines et en calories. Les symptômes se manifestent par un retard de croissance chez les enfants, un ventre gonflé et des infections fréquentes. Le traitement du kwashiorkor peut consister à augmenter lentement les calories ingérées avant d'augmenter les protéines."
+http://www.ontoFood.fr/kwashokor,http://www.w3.org/2000/01/rdf-schema#comment,L'ONU Travaille avec des synergies africaines depuis presque 10 ans pour mettre fin à la malnutrition.
+http://www.ontoFood.fr/fufu,http://www.w3.org/2000/01/rdf-schema#comment,"Le fufu entre dans la grande famille des couscous , il est fait à base de manioc et d'eau , c'est un complément très utilisé la culture culinaire Africaine en général."
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2000/01/rdf-schema#comment,"La sauce eru , faite à base de feuille de Eru , d'huile."
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2000/01/rdf-schema#comment,"Spécialité du nord-Ouest Cameroun, le fufu sauce eru est plat très dégusté au  Cameroun."
 http://www.ontoFood.fr/sauce_okok,http://www.w3.org/2000/01/rdf-schema#comment,"La sauce OKOK , spécialité de la region du Centre Cameroun. Plat local très dégusté."
+http://www.ontoFood.fr/koki,http://www.w3.org/2000/01/rdf-schema#comment,"Le koki ou encore gâteau de Cornille en français est un plat de couleur jaune doré, il est fait à base de haricots blancs du nom scientifique Vigna unguiculata et d'huile de palme1,2.  Le koki désigne également le haricot blanc servant essentiellement à la préparation de ce plat. Dans la préparation de ce plat le choix de l'huile de palme est essentielle pour le goût du gâteau. Le koki se consomme traditionnellement avec de la banane plantain, de la banane, du macabo ou de l'igname, mais il est commode aussi de l'accompagner avec du pain ou du manioc.  Il est d'origine camerounaise, venant de la culture Mbo dans la région du Littoral, département du Moungo, d'où l'expression mboo koki3."
+http://www.ontoFood.fr/ff,http://www.w3.org/2000/01/rdf-schema#comment,Fkqhfiuezhfeziuhfiuezfh
 http://www.w3.org/2002/07/owl#Thing,http://www.w3.org/2000/01/rdf-schema#label,Thing
+http://www.ontoFood.fr/,http://www.w3.org/2000/01/rdf-schema#label,OntoFood Ontology
 http://www.ontoFood.fr/Epice,http://www.w3.org/2000/01/rdf-schema#label,Epice
 http://www.ontoFood.fr/Pays,http://www.w3.org/2000/01/rdf-schema#label,Pays
 http://www.ontoFood.fr/Region,http://www.w3.org/2000/01/rdf-schema#label,Region
@@ -6117,7 +6250,11 @@ http://www.ontoFood.fr/Nutriment,http://www.w3.org/2000/01/rdf-schema#label,Nutr
 http://www.ontoFood.fr/Poisson,http://www.w3.org/2000/01/rdf-schema#label,Poisson
 http://www.ontoFood.fr/Viande,http://www.w3.org/2000/01/rdf-schema#label,Viande
 http://www.ontoFood.fr/Participant,http://www.w3.org/2000/01/rdf-schema#label,Participant
+http://www.ontoFood.fr/a_pour_email,http://www.w3.org/2000/01/rdf-schema#label,Email
+http://www.ontoFood.fr/a_pour_nom_conv,http://www.w3.org/2000/01/rdf-schema#label,Nom Conventionel
+http://www.ontoFood.fr/a_pour_nom_tradi,http://www.w3.org/2000/01/rdf-schema#label,Nom Traditionnel
 http://www.ontoFood.fr/Beignet,http://www.w3.org/2000/01/rdf-schema#label,Beignet
+http://www.ontoFood.fr/Bièrre,http://www.w3.org/2000/01/rdf-schema#label,Bièrre
 http://www.ontoFood.fr/BoissonAlcoolisée,http://www.w3.org/2000/01/rdf-schema#label,Boisson  Alcoolisée
 http://www.ontoFood.fr/BoissonNonAlcoolisée,http://www.w3.org/2000/01/rdf-schema#label,Boisson Non Alcoolisée
 http://www.ontoFood.fr/Continent,http://www.w3.org/2000/01/rdf-schema#label,Continent
@@ -6159,7 +6296,9 @@ http://www.ontoFood.fr/SelMineral,http://www.w3.org/2000/01/rdf-schema#label,Sel
 http://www.ontoFood.fr/Tubercule,http://www.w3.org/2000/01/rdf-schema#label,Tubercule
 http://www.ontoFood.fr/ViandeMaîgre,http://www.w3.org/2000/01/rdf-schema#label,Viande Maîgre
 http://www.ontoFood.fr/ViandeSemiGrasse,http://www.w3.org/2000/01/rdf-schema#label,Viande Semi-Grasse
+http://www.ontoFood.fr/Vin,http://www.w3.org/2000/01/rdf-schema#label,Vin
 http://www.ontoFood.fr/Vitamine,http://www.w3.org/2000/01/rdf-schema#label,Vitamine
+http://www.ontoFood.fr/Whisky,http://www.w3.org/2000/01/rdf-schema#label,Whisky
 http://www.ontoFood.fr/A,http://www.w3.org/2000/01/rdf-schema#label,A
 http://www.ontoFood.fr/B1,http://www.w3.org/2000/01/rdf-schema#label,B1
 http://www.ontoFood.fr/B12,http://www.w3.org/2000/01/rdf-schema#label,B12
@@ -6183,9 +6322,9 @@ http://www.ontoFood.fr/bongolo,http://www.w3.org/2000/01/rdf-schema#label,bongol
 http://www.ontoFood.fr/béribéri,http://www.w3.org/2000/01/rdf-schema#label,béribéri
 http://www.ontoFood.fr/calcium,http://www.w3.org/2000/01/rdf-schema#label,calcium
 http://www.ontoFood.fr/cameroun,http://www.w3.org/2000/01/rdf-schema#label,cameroun
-http://www.ontoFood.fr/littoral_cmr,http://www.w3.org/2000/01/rdf-schema#label,littoral cameroun
-http://www.ontoFood.fr/nord_ouest_cmr,http://www.w3.org/2000/01/rdf-schema#label,nord ouest cameroun
-http://www.ontoFood.fr/ouest_cmr,http://www.w3.org/2000/01/rdf-schema#label,ouest cameroun
+http://www.ontoFood.fr/littoral_cmr,http://www.w3.org/2000/01/rdf-schema#label,littoral
+http://www.ontoFood.fr/nord_ouest_cmr,http://www.w3.org/2000/01/rdf-schema#label,nord-ouest
+http://www.ontoFood.fr/ouest_cmr,http://www.w3.org/2000/01/rdf-schema#label,ouest
 http://www.ontoFood.fr/coucous_taro,http://www.w3.org/2000/01/rdf-schema#label,couscous taro
 http://www.ontoFood.fr/couscous_mais,http://www.w3.org/2000/01/rdf-schema#label,couscous mais
 http://www.ontoFood.fr/eau_de_cuisine,http://www.w3.org/2000/01/rdf-schema#label,eau de cuisine
@@ -6206,7 +6345,6 @@ http://www.ontoFood.fr/eau_a_boire,http://www.w3.org/2000/01/rdf-schema#label,ea
 http://www.ontoFood.fr/europe,http://www.w3.org/2000/01/rdf-schema#label,europe
 http://www.ontoFood.fr/feuille_eru,http://www.w3.org/2000/01/rdf-schema#label,feuille eru
 http://www.ontoFood.fr/lipides,http://www.w3.org/2000/01/rdf-schema#label,lipides
-http://www.ontoFood.fr/lipides,http://www.w3.org/2000/01/rdf-schema#label,llipides
 http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/2000/01/rdf-schema#label,feuille ndolè
 http://www.ontoFood.fr/kwashokor,http://www.w3.org/2000/01/rdf-schema#label,kwashokor
 http://www.ontoFood.fr/protides,http://www.w3.org/2000/01/rdf-schema#label,protides
@@ -6270,6 +6408,10 @@ http://www.ontoFood.fr/viande_du_cheval,http://www.w3.org/2000/01/rdf-schema#lab
 http://www.ontoFood.fr/viande_du_mouton,http://www.w3.org/2000/01/rdf-schema#label,viande de mouton
 http://www.ontoFood.fr/yaourt,http://www.w3.org/2000/01/rdf-schema#label,yaourt
 http://www.ontoFood.fr/ndo'o,http://www.w3.org/2000/01/rdf-schema#label,ndo'o
+http://www.ontoFood.fr/grabage,http://www.w3.org/2000/01/rdf-schema#label,Grabage
+http://www.ontoFood.fr/koki,http://www.w3.org/2000/01/rdf-schema#label,Koki
+http://www.ontoFood.fr/ff,http://www.w3.org/2000/01/rdf-schema#label,YYYYY
+http://www.ontoFood.fr/Feculent,http://www.w3.org/2002/07/owl#topDataProperty,"data:image/jpeg;base64,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"
 http://www.ontoFood.fr/A,http://www.w3.org/2002/07/owl#topDataProperty,vitamine A
 http://www.ontoFood.fr/B1,http://www.w3.org/2002/07/owl#topDataProperty,vitamine B1
 http://www.ontoFood.fr/B12,http://www.w3.org/2002/07/owl#topDataProperty,vitamine B12
@@ -6285,7 +6427,6 @@ http://www.ontoFood.fr/PP,http://www.w3.org/2002/07/owl#topDataProperty,vitamine
 http://www.ontoFood.fr/blé,http://www.w3.org/2002/07/owl#topDataProperty,blé
 http://www.ontoFood.fr/bongolo,http://www.w3.org/2002/07/owl#topDataProperty,bongolo
 http://www.ontoFood.fr/littoral_cmr,http://www.w3.org/2002/07/owl#topDataProperty,littoral
-http://www.ontoFood.fr/nord_ouest_cmr,http://www.w3.org/2002/07/owl#topDataProperty,littoral
 http://www.ontoFood.fr/coucous_taro,http://www.w3.org/2002/07/owl#topDataProperty,couscous_taro
 http://www.ontoFood.fr/couscous_mais,http://www.w3.org/2002/07/owl#topDataProperty,couscous_mais
 http://www.ontoFood.fr/sauce_ndolè,http://www.w3.org/2002/07/owl#topDataProperty,sauce ndolè
@@ -6302,8 +6443,10 @@ http://www.ontoFood.fr/donald,http://www.w3.org/2002/07/owl#topDataProperty,dona
 http://www.ontoFood.fr/lipides,http://www.w3.org/2002/07/owl#topDataProperty,lipides
 http://www.ontoFood.fr/lipides,http://www.w3.org/2002/07/owl#topDataProperty,7.14
 http://www.ontoFood.fr/feuille_ndolè,http://www.w3.org/2002/07/owl#topDataProperty,feuille de ndolè
+http://www.ontoFood.fr/kwashokor,http://www.w3.org/2002/07/owl#topDataProperty,"data:image/jpeg;base64,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"
 http://www.ontoFood.fr/foléré,http://www.w3.org/2002/07/owl#topDataProperty,foléré
 http://www.ontoFood.fr/fufu,http://www.w3.org/2002/07/owl#topDataProperty,fufu
+http://www.ontoFood.fr/fufu,http://www.w3.org/2002/07/owl#topDataProperty,https://i2.wp.com/www.alicepegie.com/wp-content/uploads/2010/02/fufumanioc.jpg
 http://www.ontoFood.fr/igname,http://www.w3.org/2002/07/owl#topDataProperty,igname
 http://www.ontoFood.fr/jinger,http://www.w3.org/2002/07/owl#topDataProperty,jinger
 http://www.ontoFood.fr/jus_de_baobab,http://www.w3.org/2002/07/owl#topDataProperty,jus_de_baobab
@@ -6323,6 +6466,8 @@ http://www.ontoFood.fr/pèbè,http://www.w3.org/2002/07/owl#topDataProperty,pèb
 http://www.ontoFood.fr/sauce_aubergines,http://www.w3.org/2002/07/owl#topDataProperty,sauce aubergines
 http://www.ontoFood.fr/sauce_carottes,http://www.w3.org/2002/07/owl#topDataProperty,sauce carottes
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topDataProperty,sauce eru
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topDataProperty,https://cuisinedumboa.com/wp-content/uploads/2019/03/FB_IMG_15307324283946846-1.jpg
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topDataProperty,Water Fufu
 http://www.ontoFood.fr/sauce_mbongo,http://www.w3.org/2002/07/owl#topDataProperty,sauce mbongo
 http://www.ontoFood.fr/sauce_noire,http://www.w3.org/2002/07/owl#topDataProperty,sauce noire
 http://www.ontoFood.fr/sauce_nonfo,http://www.w3.org/2002/07/owl#topDataProperty,sauce nonfo
@@ -6332,11 +6477,13 @@ http://www.ontoFood.fr/sauce_tomates,http://www.w3.org/2002/07/owl#topDataProper
 http://www.ontoFood.fr/sauce_verte,http://www.w3.org/2002/07/owl#topDataProperty,sauce verte
 http://www.ontoFood.fr/sel_gemme,http://www.w3.org/2002/07/owl#topDataProperty,sel_gemme
 http://www.ontoFood.fr/ndo'o,http://www.w3.org/2002/07/owl#topDataProperty,ndo'o
+http://www.ontoFood.fr/koki,http://www.w3.org/2002/07/owl#topDataProperty,https://upload.wikimedia.org/wikipedia/commons/b/b2/Koki_banane_poyo.jpg
 http://www.ontoFood.fr/banane,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/banne_malaxée
 http://www.ontoFood.fr/banne_malaxée,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/banane
 http://www.ontoFood.fr/cameroun,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/littoral_cmr
 http://www.ontoFood.fr/cameroun,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/nord_ouest_cmr
 http://www.ontoFood.fr/cameroun,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/ouest_cmr
+http://www.ontoFood.fr/cameroun,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/grabage
 http://www.ontoFood.fr/littoral_cmr,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/cameroun
 http://www.ontoFood.fr/nord_ouest_cmr,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/cameroun
 http://www.ontoFood.fr/ouest_cmr,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/cameroun
@@ -6407,6 +6554,7 @@ http://www.ontoFood.fr/pilé_pomme,http://www.w3.org/2002/07/owl#topObjectProper
 http://www.ontoFood.fr/pomme_de_terre,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/pilé_pomme
 http://www.ontoFood.fr/piment,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/couscous_mais_sauce_ndolè
 http://www.ontoFood.fr/piment,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/sauce_ndolè
+http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/nord_ouest_cmr
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/feuille_eru
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/lipides
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/filet_boeuf
@@ -6415,6 +6563,8 @@ http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topObjectProperty
 http://www.ontoFood.fr/sauce_eru,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/sauce_eru_avec_le_fufu
 http://www.ontoFood.fr/sel_de_cuisine,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/sauce_eru
 http://www.ontoFood.fr/sel_de_cuisine,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/sauce_eru_avec_le_fufu
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/cameroun
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/nord_ouest_cmr
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/eau_de_cuisine
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/feuille_eru
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/lipides
@@ -6424,6 +6574,10 @@ http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topO
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/huile_arachide
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/sauce_eru
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/sel_de_cuisine
+http://www.ontoFood.fr/grabage,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/cameroun
+http://www.ontoFood.fr/grabage,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/kwashokor
+http://www.ontoFood.fr/koki,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/ouest_cmr
+http://www.ontoFood.fr/koki,http://www.w3.org/2002/07/owl#topObjectProperty,http://www.ontoFood.fr/kwashokor
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/a_pour_epice,http://www.ontoFood.fr/djansan
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/a_pour_epice,http://www.ontoFood.fr/piment
 http://www.ontoFood.fr/couscous_mais,http://www.ontoFood.fr/se_prepare_avec,http://www.ontoFood.fr/eau_de_cuisine
@@ -6455,9 +6609,11 @@ http://www.ontoFood.fr/piment,http://www.ontoFood.fr/est_epice_de,http://www.ont
 http://www.ontoFood.fr/cameroun,http://www.ontoFood.fr/a_pour_region,http://www.ontoFood.fr/littoral_cmr
 http://www.ontoFood.fr/cameroun,http://www.ontoFood.fr/a_pour_region,http://www.ontoFood.fr/nord_ouest_cmr
 http://www.ontoFood.fr/cameroun,http://www.ontoFood.fr/a_pour_region,http://www.ontoFood.fr/ouest_cmr
+http://www.ontoFood.fr/cameroun,http://www.ontoFood.fr/a_pour_region,http://www.ontoFood.fr/grabage
 http://www.ontoFood.fr/littoral_cmr,http://www.ontoFood.fr/est_la_region_du_pays,http://www.ontoFood.fr/cameroun
 http://www.ontoFood.fr/nord_ouest_cmr,http://www.ontoFood.fr/est_la_region_du_pays,http://www.ontoFood.fr/cameroun
 http://www.ontoFood.fr/ouest_cmr,http://www.ontoFood.fr/est_la_region_du_pays,http://www.ontoFood.fr/cameroun
+http://www.ontoFood.fr/grabage,http://www.ontoFood.fr/est_la_region_du_pays,http://www.ontoFood.fr/cameroun
 http://www.ontoFood.fr/banane,http://www.ontoFood.fr/entre_dans_la_composition_de,http://www.ontoFood.fr/banne_malaxée
 http://www.ontoFood.fr/couscous_mais,http://www.ontoFood.fr/entre_dans_la_composition_de,http://www.ontoFood.fr/couscous_mais_sauce_ndolè
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/entre_dans_la_composition_de,http://www.ontoFood.fr/couscous_mais_sauce_ndolè
@@ -6501,6 +6657,8 @@ http://www.ontoFood.fr/sel_de_cuisine,http://www.ontoFood.fr/entre_dans_la_prepa
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/est_conseillé_pour,http://www.ontoFood.fr/kwashokor
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/est_conseillé_pour,http://www.ontoFood.fr/kwashokor
 http://www.ontoFood.fr/feuille_ndolè,http://www.ontoFood.fr/est_conseillé_pour,http://www.ontoFood.fr/kwashokor
+http://www.ontoFood.fr/grabage,http://www.ontoFood.fr/est_conseillé_pour,http://www.ontoFood.fr/kwashokor
+http://www.ontoFood.fr/koki,http://www.ontoFood.fr/est_conseillé_pour,http://www.ontoFood.fr/kwashokor
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/est_constitué_de,http://www.ontoFood.fr/protides
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/est_constitué_de,http://www.ontoFood.fr/zinc
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/est_constitué_de,http://www.ontoFood.fr/protides
@@ -6513,6 +6671,9 @@ http://www.ontoFood.fr/sauce_eru,http://www.ontoFood.fr/est_constitué_de,http:/
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.ontoFood.fr/est_constitué_de,http://www.ontoFood.fr/lipides
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/est_une_spécialiatié_du,http://www.ontoFood.fr/littoral_cmr
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/est_une_spécialiatié_du,http://www.ontoFood.fr/littoral_cmr
+http://www.ontoFood.fr/sauce_eru,http://www.ontoFood.fr/est_une_spécialiatié_du,http://www.ontoFood.fr/nord_ouest_cmr
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.ontoFood.fr/est_une_spécialiatié_du,http://www.ontoFood.fr/nord_ouest_cmr
+http://www.ontoFood.fr/koki,http://www.ontoFood.fr/est_une_spécialiatié_du,http://www.ontoFood.fr/ouest_cmr
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/peut_se_manger_avec,http://www.ontoFood.fr/viande_de_boeuf
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/peut_se_manger_avec,http://www.ontoFood.fr/viande_du_porc
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/peut_se_manger_avec,http://www.ontoFood.fr/viande_de_boeuf
@@ -6520,6 +6681,7 @@ http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/peut_se_manger_avec,h
 http://www.ontoFood.fr/sauce_eru,http://www.ontoFood.fr/peut_se_manger_avec,http://www.ontoFood.fr/filet_boeuf
 http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.ontoFood.fr/peut_se_manger_avec,http://www.ontoFood.fr/filet_boeuf
 http://www.ontoFood.fr/couscous_mais_sauce_ndolè,http://www.ontoFood.fr/provient_du_pays,http://www.ontoFood.fr/cameroun
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.ontoFood.fr/provient_du_pays,http://www.ontoFood.fr/cameroun
 http://www.ontoFood.fr/donald,http://www.ontoFood.fr/a_pour_email,donaldfotso44@gmail.com
 http://www.ontoFood.fr/donald,http://www.ontoFood.fr/a_pour_metier,Etudiant
 http://www.ontoFood.fr/A,http://www.ontoFood.fr/a_pour_nom_conv,vitamine A
@@ -6536,7 +6698,6 @@ http://www.ontoFood.fr/K,http://www.ontoFood.fr/a_pour_nom_conv,vitamine K
 http://www.ontoFood.fr/PP,http://www.ontoFood.fr/a_pour_nom_conv,vitamine PP
 http://www.ontoFood.fr/blé,http://www.ontoFood.fr/a_pour_nom_conv,blé
 http://www.ontoFood.fr/littoral_cmr,http://www.ontoFood.fr/a_pour_nom_conv,littoral
-http://www.ontoFood.fr/nord_ouest_cmr,http://www.ontoFood.fr/a_pour_nom_conv,littoral
 http://www.ontoFood.fr/coucous_taro,http://www.ontoFood.fr/a_pour_nom_conv,couscous_taro
 http://www.ontoFood.fr/couscous_mais,http://www.ontoFood.fr/a_pour_nom_conv,couscous_mais
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/a_pour_nom_conv,sauce ndolè
@@ -6576,9 +6737,23 @@ http://www.ontoFood.fr/macabo,http://www.ontoFood.fr/a_pour_nom_tradi,macabo
 http://www.ontoFood.fr/patate_douce,http://www.ontoFood.fr/a_pour_nom_tradi,patate_douce
 http://www.ontoFood.fr/piment,http://www.ontoFood.fr/a_pour_nom_tradi,piment
 http://www.ontoFood.fr/pèbè,http://www.ontoFood.fr/a_pour_nom_tradi,pèbè
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.ontoFood.fr/a_pour_nom_tradi,Water Fufu
 http://www.ontoFood.fr/sauce_mbongo,http://www.ontoFood.fr/a_pour_nom_tradi,sauce mbongo
 http://www.ontoFood.fr/sauce_verte,http://www.ontoFood.fr/a_pour_nom_tradi,sauce verte
 http://www.ontoFood.fr/ndo'o,http://www.ontoFood.fr/a_pour_nom_tradi,ndo'o
 http://www.ontoFood.fr/donald,http://www.ontoFood.fr/a_pour_pseudo,donaldoempire
 http://www.ontoFood.fr/lipides,http://www.ontoFood.fr/a_pour_val_kcal,7.14
+http://www.ontoFood.fr/Feculent,http://www.ontoFood.fr/a_pour_image,"data:image/jpeg;base64,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"
 http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/a_pour_image,"https://res.cloudinary.com/hv9ssmzrz/image/fetch/c_fill,f_auto,h_488,q_auto,w_650/https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/recipe_photos/original/85533/_ndolee.png"
+http://www.ontoFood.fr/kwashokor,http://www.ontoFood.fr/a_pour_image,"data:image/jpeg;base64,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"
+http://www.ontoFood.fr/fufu,http://www.ontoFood.fr/a_pour_image,https://i2.wp.com/www.alicepegie.com/wp-content/uploads/2010/02/fufumanioc.jpg
+http://www.ontoFood.fr/sauce_eru_avec_le_fufu,http://www.ontoFood.fr/a_pour_image,https://cuisinedumboa.com/wp-content/uploads/2019/03/FB_IMG_15307324283946846-1.jpg
+http://www.ontoFood.fr/koki,http://www.ontoFood.fr/a_pour_image,https://upload.wikimedia.org/wikipedia/commons/b/b2/Koki_banane_poyo.jpg
+http://www.ontoFood.fr/a_participé_a_l'édition,http://www.w3.org/2000/01/rdf-schema#Label,Edition
+http://www.ontoFood.fr/a_pour_image,http://www.w3.org/2000/01/rdf-schema#Label,Image
+http://www.ontoFood.fr/Nutriment,http://www.ontoFood.fr/a_pour_fait,Le nutriment appartient à la famille des ff
+http://www.ontoFood.fr/Feculent,http://www.ontoFood.fr/a_pour_fait,Les féculents sont riches en amidon.
+http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/a_pour_fait,La sauce ndolè a pour ingredient les oignons.
+http://www.ontoFood.fr/sauce_ndolè,http://www.ontoFood.fr/a_pour_fait,La sauce ndolè est originaire du Sud du cameroun.
+http://www.ontoFood.fr/fufu,http://www.ontoFood.fr/a_pour_fait,Le fufu est fait de manioc et d'eau.
+http://www.ontoFood.fr/pomme_de_terre,http://www.ontoFood.fr/a_pour_fait,Les pommes de terre sont des féculents et des tubercules.

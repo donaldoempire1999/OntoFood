@@ -251,12 +251,12 @@ class GraphDBDao{
      }
 
 
-    /* getAllObjectProperties(){
+    getAllObjectProperties(){
 
         return new Promise((resolve , reject) => {
 
             let query = "select ?s where { "+
-                "?s rdf:type rdf:Property."+
+                "?s rdf:type owl:ObjectProperty."+
              "}"
 
              this.graphDBEndpoint.query(query).then(response => {
@@ -283,7 +283,7 @@ class GraphDBDao{
         
         });
     
-    }*/
+    }
 
 
     getAllProperties(){
