@@ -83,21 +83,11 @@ crud_router.get('/populate/class', (req , res) => {
 
 crud_router.get('/get/all/properties', (req , res) => {
 
-    let properties = [];
+    Access.getAllProperties().then(entities => {
 
-    Access.getAllProperties().then(prop => {
+        res.json({entities: entities});
 
-        properties = prop;
-
-        return Access.getEntityByLabel("Thing");
-
-    }).then(entity => {
-
-        properties['entities'] = entity.views[0].data;
-
-        res.json({properties: properties});
-
-    })
+    }).catch(err => console.log(err))
 
 });
 

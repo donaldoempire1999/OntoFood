@@ -247,18 +247,29 @@ class GraphDBDao{
      }
 
 
-
-     getAllObjectProperties(){
+    /* getAllObjectProperties(){
 
         return new Promise((resolve , reject) => {
 
             let query = "select ?s where { "+
-                "?s rdf:type owl:ObjectProperty."+
+                "?s rdf:type rdf:Property."+
              "}"
 
              this.graphDBEndpoint.query(query).then(response => {
 
-                let properties = response.records.map(row => row.s);
+                let properties = response.records.filter(row => {
+
+                    let last_s = row.s;
+
+                    if (last_s.includes(EnapsoGraphDBClient.PREFIX_RDF)){
+
+                        return last_s;
+
+                    }
+
+                });
+
+                 console.log("----------------------PROPERTIES----------------------------");
 
                 resolve(properties)
              
@@ -268,6 +279,87 @@ class GraphDBDao{
         
         });
     
+    }*/
+
+
+    getAllProperties(){
+
+        return new Promise((resolve , reject) => {
+
+            let query = "select distinct ?s where { \n" +
+                "\t?s rdf:type rdf:Property .\n" +
+                "}"
+
+            this.graphDBEndpoint.query(query).then(response => {
+
+                let properties = [];
+
+                properties = response.records.map(row => row.s);
+
+                let properties_rdf = properties.filter(prop => prop.includes(EnapsoGraphDBClient.PREFIX_RDF.iri))
+                    .map(p => {
+                        p = p.substring(EnapsoGraphDBClient.PREFIX_RDF.iri.length , p.length+1);
+                        p = "rdf:".concat(p);
+                        return p;
+                    });
+
+
+
+                let properties_rdfs = properties.filter(prop => prop.includes(EnapsoGraphDBClient.PREFIX_RDFS.iri)).map(p => {
+                    p = p.substring(EnapsoGraphDBClient.PREFIX_RDFS.iri.length , p.length+1);
+                    p = "rdfs:".concat(p);
+                    return p;
+                });
+
+                let properties_owl = properties.filter(prop => prop.includes(EnapsoGraphDBClient.PREFIX_OWL.iri)).map(p => {
+                    p = p.substring(EnapsoGraphDBClient.PREFIX_OWL.iri.length , p.length+1);
+                    p = "owl:".concat(p);
+                    return p;
+                });
+
+                let properties_onto = properties.filter(prop => prop.includes(DEFAULT_PREFIXES[5].iri)).map(p => {
+                    p = p.substring(DEFAULT_PREFIXES[5].iri.length , p.length+1);
+                    p = "onto:".concat(p);
+                    return p;
+                });
+
+                properties = properties_onto.concat(properties_owl).concat(properties_rdfs).concat(properties_rdf);
+
+                resolve(properties);
+
+            }).catch(err => reject(err));
+
+
+        });
+    }
+
+
+
+    getAllEntities(){
+
+        return new Promise((resolve , reject) => {
+
+            let query = " select distinct ?s where { \n" +
+                "         ?s rdf:type ?type; rdfs:label ?label.\n" +
+                "    filter(?type = owl:Thing)\n" +
+                "}\n"
+
+            this.graphDBEndpoint.query(query).then(response => {
+
+                console.log(response.records);
+
+                let entities_onto = response.records.map(row => row.s).map(p => {
+                    p = p.substring(DEFAULT_PREFIXES[5].iri.length , p.length+1);
+                    p = "onto:".concat(p);
+                    return p;
+                });
+
+                resolve(entities_onto);
+
+            }).catch(err => reject(err));
+
+        });
+
     }
 
 

@@ -21,24 +21,21 @@ module.exports = class Access{
 
         return new Promise((resolve, reject) => {
 
-            let properties = {others: ['rdfs:label','rdfs:comment','rdfs:subClassOf',' rdfs:isDefinedBy',' rdfs:seeAlso']};
+           let entities = []
 
-            this.gb.getAllDataProperties().then(res => {
+            this.gb.getAllProperties().then(props => {
 
-                console.log(res);
+                entities = props;
 
-                properties['data_properties'] = res
+                return this.gb.getAllEntities();
 
-                return this.gb.getAllObjectProperties();
+            }).then(class_indiv => {
 
-            }).then(res => {
+                entities = entities.concat(class_indiv);
 
-                console.log(res);
+                entities = Array.from(new Set(entities));
 
-                properties['object_properties'] = res
-
-                resolve (properties);
-
+                resolve(entities);
 
             }).catch(err => reject(err));
 
