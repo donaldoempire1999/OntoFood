@@ -1,4 +1,4 @@
-OntoFood est une application web de gestion culinaire et nutritive dotée d'un moteur ontologique permettant de faire de la recommandation nutritive et la recherche des mets. Il est aussi doté d'un moteur de recherche textuel et d'un interface de population.
+OntoFood est une application web de gestion culinaire et nutritive dotée d'un moteur ontologique permettant de faire de la recommandation nutritive et la recherche des mets. Il est aussi doté d'un moteur de recherche textuel avec Apache Solr comme serveur et d'une interface de population basée sur GraphDB.
 
 onto_spec: Contient tout ce qui concerne les spécifications de l'application , diagrammes de classes , architecture etc..
 
