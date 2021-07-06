@@ -16,10 +16,10 @@ OUTILS UTILISÉS:
        
          -> Dezipper le fichier.
          -> Positionnez vous dans le dossier graphDB/opt/graphdb-free.
-         -> Tapez ./graphdb-free en ligne de commmande, un interface va d'afficher. Ensuite vous serrez orienter dans le navigateur.
+         -> Tapez ./graphdb-free en ligne de commmande, une interface va d'afficher. Ensuite vous serrez orienter dans le navigateur.
          -> Creer un utilisateur dans graphDb avec comme username: donaldo2019 et mdp donaldo2019.
          -> Creer une repositorie avec nom: ontoFood.
-         -> Importer l'ontologie dans graphDb.
+         -> Importer l'ontologie dans graphDb (Situer dans le dossier onto_food_ontology: "onto_food.jsonld"
          
   
    * APACHE SOLR
