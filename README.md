@@ -23,6 +23,7 @@ OUTILS UTILISÉS:
          
   
    * APACHE SOLR
+     
       Suivre le lien http://solr.apache.org/downloads.html pour telechargement , telechargez la dernière version sous format .tgz, ensuite, executez les commandes       suivantes:
      
         -> Desizpper le fichier et positionnez vous dans le dossier.
@@ -34,15 +35,23 @@ OUTILS UTILISÉS:
    
          -> Positionnez vous dans le dossier apache solr
          -> Tapez bin/solr start -cloud -p 8983 -s "example/cloud/node1/solr"
-         -> Tapez bin/post -c ontoFood  (Positon du dossier courant de apache solr)/(Position du repo local dan votre mahine)/onto_food/query-result.csv
+         -> Tapez bin/post -c ontoFood  (Positon du dossier courant de apache solr)/(Position du repo local dan votre mahine)/onto_food_ontology/query-result.csv
     
-    * NODE JS:
+  
+   * NODE JS:
      
          -> Installer la version 14 de node js: https://nodejs.org/dist/v14.17.3/node-v14.17.3-linux-x64.tar.xz
          -> Installer le gestionaire de dépendances NPM
          -> Installer nodemon: **npm install nodemon**
          -> Installer l'API de communication avec GraphDb: **npm i @innotrade/enapso-graphdb-client --save**
          -> Installer l'API de communication avec apache Solr: **npm i solr-node**
+         -> Taper "nodemon" en ligne de commande dans le dossier courant onto_foo_app du repo.
+         
+     
+     Allez au navigateur et tapez localhost:3000/
+     
+     
+    
    
          
  
