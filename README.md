@@ -21,9 +21,10 @@ OUTILS UTILISÉS:
  
   * APACHE SOLR
       Suivre le lien http://solr.apache.org/downloads.html pour telechargement , telechargez la dernière version sous format .tgz, ensuite, executez les commandes suivantes:
-     -> Desizpper le fichier et positionnez vous dans le dossier
-     -> tapez ./bin/solr start -e cloud
-     -> Suivez l'assistant, quand il va demander le nom de la collection à créer tapez "ontoFood"
+     
+        -> Desizpper le fichier et positionnez vous dans le dossier
+        -> tapez ./bin/solr start -e cloud
+        -> Suivez l'assistant, quand il va demander le nom de la collection à créer tapez "ontoFood"
    
    * NODE JS:
      
