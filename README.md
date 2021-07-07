@@ -8,9 +8,9 @@ onto-food-app: Ici c'est le code de l'application fait en node JS avec Ejs comme
 
 -node_version: 14.04
 
-OUTILS UTILISÉS:
+OUTILS UTILISÉS :
 
-   * GRAPHDB (TripleStore):
+   * GRAPHDB (TripleStore) :
 
      Suivre le lien: https://www.ontotext.com/products/graphdb/ pour telecharger , pour l'installation faire:
        
@@ -31,14 +31,14 @@ OUTILS UTILISÉS:
          -> Suivez l'assistant, quand il va demander le nom de la collection à créer tapez "ontoFood"
    
  
-   * INDEXATION DES DONNÉES TRIPLETS DANS APACHE SOLR:
+   * INDEXATION DES DONNÉES TRIPLETS DANS APACHE SOLR :
    
          -> Positionnez vous dans le dossier apache solr
          -> Tapez bin/solr start -cloud -p 8983 -s "example/cloud/node1/solr"
          -> Tapez bin/post -c ontoFood  (Positon du dossier courant de apache solr)/(Position du repo local dan votre mahine)/onto_food_ontology/query-result.csv
     
   
-   * NODE JS:
+   * NODE JS :
      
          -> Installer la version 14 de node js: https://nodejs.org/dist/v14.17.3/node-v14.17.3-linux-x64.tar.xz
          -> Installer le gestionaire de dépendances NPM
